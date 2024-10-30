@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import NavBar from "@/components/navbar";
 
-function Home() {
+export default function Home() {
   return (
     <div className="flex flex-col justify-center">
       <NavBar />
@@ -13,5 +13,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
