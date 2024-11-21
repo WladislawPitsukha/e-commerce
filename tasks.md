@@ -4,17 +4,31 @@
 
 - [ x ] to make NavBar
 - [ x ] to make Header ((THE MAIN PAGE))
+- [ x ] to finish Footer ((THE MAIN PAGE))
+- [ x ] to make Footer ((THE MAIN PAGE))
 
 ## Current part
 
-- [ ] to finish Footer ((THE MAIN PAGE))
-- [ ] to make Footer ((THE MAIN PAGE))
 - [ ] to check massive & functions ((THE MAIN PAGE))
 - [ ] to make cards for SECTIONS of ARRIVALS & SELLING ((THE MAIN PAGE))
 - [ ] to make section of arrivals ((THE MAIN PAGE))
 - [ ] to make section of selling ((THE MAIN PAGE))
-- [ ] to Finish every task 
-- [ ] to add hovering / animation
+
+- [ ] to FINISH section of arrivals ((THE MAIN PAGE))
+- [ ] to FINISH section of selling ((THE MAIN PAGE))
+- [ ] to FINISH creation CARD OF PRODUCT ((THE MAIN PAGE))
+- [ ] to finish CardClothe
+
+
+
+- [ ] to Finish every task ((THE MAIN PAGE))
+- [ ] to add hovering / animation ((THE MAIN PAGE))
+- [ ] to finish SECTIONS 
+- [ ] To add FOOTER Pages:
+- [ ] - About
+- [ ] - Career
+- [ ] - Features
+- [ ] - Works
 
 ## Next part
 
