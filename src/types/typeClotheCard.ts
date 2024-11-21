@@ -32,12 +32,12 @@ export const TshirtsObjs: ClotheObjProps[] = [
 
 export const ShirtObjs: ClotheObjProps[] = [
     {
-        id: 1,
+        id: 4,
         title: "Checkered Shirt",
         price: 180,
     },
     {
-        id: 2,
+        id: 5,
         title: "Vertical Striped Shirt",
         price: 232,
         option: 30,
@@ -46,13 +46,13 @@ export const ShirtObjs: ClotheObjProps[] = [
 
 export const JeansObjs: ClotheObjProps[] = [
     {
-        id: 1,
+        id: 6,
         title: "Skinny Fit Jeans",
         price: 260,
         option: 20,
     },
     {
-        id: 2,
+        id: 7,
         title: "Faded Skinny Jeans",
         price: 210,
     }
@@ -60,7 +60,7 @@ export const JeansObjs: ClotheObjProps[] = [
 
 export const ShortsObj: ClotheObjProps[] = [
     {
-        id: 1,
+        id: 8,
         title: "Loose Fit Bermuda Shorts",
         price: 80,
     }

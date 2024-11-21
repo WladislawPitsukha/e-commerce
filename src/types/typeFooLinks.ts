@@ -1,7 +1,7 @@
-import { link } from "fs";
 import { IconType } from "react-icons";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaFacebookF, FaGithub } from "react-icons/fa";
+import { importImgPayments } from "@/utils/importImages";
 
 
 export type FooterTextLinks = {
@@ -20,6 +20,8 @@ export type FooterIconLinks = {
     link: string;
 }
 
+const { payments } = importImgPayments()
+export const arrayPayments: any[] = payments;
 
 export const arrayIconLinks: FooterIconLinks[] = [
     {

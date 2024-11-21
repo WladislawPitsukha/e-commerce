@@ -1,4 +1,5 @@
-import { arrayIconLinks, arrayTextLinks } from "@/types/typeFooLinks";
+import { arrayIconLinks, arrayPayments, arrayTextLinks } from "@/types/typeFooLinks";
+import Image from "next/image";
 
 export default function Footer() {
     return(
@@ -51,9 +52,26 @@ export default function Footer() {
                     </article>
                 ))}
             </section>
-            <br className="" />
+            <hr className="border border-[rgba(0, 0, 0, 0.1)]" />
             <section className="flex justify-between items-center">
-                
+                <h2 className="font-satoshi text-sm font-normal leading-[18.9px] text-right text-[#00000099]">
+                    Shop.co © 2000-2023, All Rights Reserved
+                </h2>
+                <div className="flex items-center gap-3">
+                    {arrayPayments.map((item, index) => (
+                        <div
+                            className="shadow-[0px_0.45px_4.48px_0px_rgba(183,183,183,0.08),0px_4.48px_8.96px_0px_rgba(183,183,183,0.08)] border-[0.22px] border-[#D6DCE5] bg-white rounded-tl-[5.38px] px-[10px] py-[6px]"
+                            key={index}
+                        >
+                            <Image 
+                                className="w-10 h-4"
+                                key={index}
+                                src={item}
+                                alt={`Payment method ${index + 1}`}
+                            />
+                        </div>
+                    ))}
+                </div>
             </section>
         </footer>
     )
