@@ -1,7 +1,11 @@
 import { IconType } from "react-icons";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaFacebookF, FaGithub } from "react-icons/fa";
-import { importImgPayments } from "@/utils/importImages";
+import Payment1 from '@/assets/img/payments/visa.png';
+import Payment2 from '@/assets/img/payments/mastercard.png';
+import Payment3 from '@/assets/img/payments/paypal.png';
+import Payment4 from '@/assets/img/payments/apple-pay.png';
+import Payment5 from '@/assets/img/payments/google-pay.png';
 
 
 export type FooterTextLinks = {
@@ -20,8 +24,7 @@ export type FooterIconLinks = {
     link: string;
 }
 
-const { payments } = importImgPayments()
-export const arrayPayments: any[] = payments;
+export const arrayPayments: any[] = [Payment1, Payment2, Payment3, Payment4, Payment5];
 
 export const arrayIconLinks: FooterIconLinks[] = [
     {

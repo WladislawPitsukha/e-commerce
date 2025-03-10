@@ -15,7 +15,7 @@ export default function Home() {
           <h2 className="font-integral text-5xl font-bold leading-[57.6px] text-center text-black uppercase">
             New Arrivals
           </h2>
-
+          
         </section>
         <section className="flex flex-col gap-14">
           <h2 className="font-integral text-5xl font-bold leading-[57.6px] text-center text-black uppercase">
