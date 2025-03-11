@@ -3,6 +3,6 @@ export type ClotheObjProps = {
     img: any;
     title: string;
     price: number;
-    option?: boolean;
+    option: boolean;
     procent: number;
 }

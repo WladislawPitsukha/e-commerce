@@ -10,6 +10,7 @@ export const arrTshirtsObjs: ClotheObjProps[] = [
         img: TShirt1,
         title: "T-shirt with Tape Details",
         price: 120,
+        option: false,
         procent: 0
     },
     {
@@ -25,6 +26,7 @@ export const arrTshirtsObjs: ClotheObjProps[] = [
         img: TShirt3,
         title: "Courage Graphic T-shirt",
         price: 145,
+        option: false,
         procent: 0
     }
 ];

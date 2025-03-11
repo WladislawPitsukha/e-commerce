@@ -9,6 +9,7 @@ export const arrShirtsObjs: ClotheObjProps[] = [
         img: Shirt1,
         title: "Checkered Shirt",
         price: 180,
+        option: false,
         procent: 0
     },
     {

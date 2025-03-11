@@ -6,12 +6,12 @@ import Image from "next/image";
 
 export default function Footer() {
     return(
-        <footer className="flex flex-col gap-6 pt-32 pb-20 px-[100px]  bg-[#F0F0F0]">
+        <footer className="flex flex-col gap-6 pt-32 pb-20 px-[100px] mt-20 bg-[#F0F0F0]">
             <section className="flex justify-between">
                 <aside className="flex flex-col items-start gap-[35px]">
                     <div className="flex flex-col items-start gap-6">
                         <h2 className="text-[32px] font-bold leading-[38.4px] text-left text-black">
-                            SHOP.CO
+                            SHOP.COM
                         </h2>
                         <p className="font-satoshi text-sm font-normal leading-[22px] text-left text-[#00000099] w-60">
                             We have clothes that suits your style and which you’re proud to wear. From women to men.
@@ -58,7 +58,7 @@ export default function Footer() {
             <hr className="border border-[rgba(0, 0, 0, 0.1)]" />
             <section className="flex justify-between items-center">
                 <h2 className="font-satoshi text-sm font-normal leading-[18.9px] text-right text-[#00000099]">
-                    Shop.co © 2000-2023, All Rights Reserved
+                    Shop.com © 2000-2025, All Rights Reserved
                 </h2>
                 <div className="flex items-center gap-3">
                     {arrPayments.map((item, index) => (
