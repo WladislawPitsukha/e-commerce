@@ -1,14 +1,15 @@
 type ArrSectProps = {
     title: string;
-
-    link?: any;
+    link: string;
 }
 
-const arrSect: ArrSectProps[] = [
+export const arrSect: ArrSectProps[] = [
     {
         title: "New arrivals",
+        link: "",
     },
     {
-        title: "Top selling"
+        title: "Top selling",
+        link: "",
     }
 ]
