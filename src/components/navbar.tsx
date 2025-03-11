@@ -1,8 +1,7 @@
 import { IconType } from "react-icons";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { SlBasket } from "react-icons/sl";
-import FormSearching from "./FormSearching";
-
+import FormSearching from "./formSearching";
 
 export default function NavBar() {
     const icons: IconType[] = [SlBasket, RiAccountCircleLine];

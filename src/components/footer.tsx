@@ -1,4 +1,7 @@
-import { arrayIconLinks, arrayPayments, arrayTextLinks } from "@/types/typeFooLinks";
+import { arrIconLinks } from "@/constants/arrIconLinks";
+import { arrPayments } from "@/constants/arrPayments";
+import { arrTextLinks } from "@/constants/arrTextLinks";
+
 import Image from "next/image";
 
 export default function Footer() {
@@ -15,7 +18,7 @@ export default function Footer() {
                         </p>
                     </div>
                     <div className="flex items-start justify-between gap-3">
-                        {arrayIconLinks.map((obj, index) => (
+                        {arrIconLinks.map((obj, index) => (
                             <div 
                                 className="border border-[#F0F0F0] bg-white p-[7px] rounded-full"
                                 key={index}
@@ -30,7 +33,7 @@ export default function Footer() {
                         ))}
                     </div>
                 </aside>
-                {arrayTextLinks.map((obj, index)  => (
+                {arrTextLinks.map((obj, index)  => (
                     <article className="flex flex-col items-start gap-[26px] h-full w-auto" key={index}>
                         <h3 className="font-satoshi text-base font-bold leading-[18px] tracking-[3px] text-left underline-offset-[from-font] decoration-skip-ink-none text-black">
                             {obj.title}
@@ -58,7 +61,7 @@ export default function Footer() {
                     Shop.co © 2000-2023, All Rights Reserved
                 </h2>
                 <div className="flex items-center gap-3">
-                    {arrayPayments.map((item, index) => (
+                    {arrPayments.map((item, index) => (
                         <div
                             className="shadow-[0px_0.45px_4.48px_0px_rgba(183,183,183,0.08),0px_4.48px_8.96px_0px_rgba(183,183,183,0.08)] border-[0.22px] border-[#D6DCE5] bg-white rounded-tl-[5.38px] px-[10px] py-[6px]"
                             key={index}
