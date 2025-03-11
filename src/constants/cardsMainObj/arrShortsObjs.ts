@@ -8,6 +8,7 @@ export const arrShortsObj: ClotheObjProps[] = [
         img: Short1,
         title: "Loose Fit Bermuda Shorts",
         price: 80,
+        option: false,
         procent: 0
     }
 ];
