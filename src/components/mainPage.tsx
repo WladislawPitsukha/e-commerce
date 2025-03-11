@@ -1,21 +1,44 @@
-import { arrDressStyle } from "@/constants/arrDressStyle";
+"use client"
+
 import Header from "./header";
 import SectionStyle from "./sectionStyle";
+import ClothesCard from "./clothesCard";
+
+import { arrDressStyle } from "@/constants/arrDressStyle";
+import { arrShirtsObjs } from "@/constants/cardsMainObj/arrShirtsObjs";
+import useRandomCards from "@/utils/randomCards";
+import { use, useEffect } from "react";
+import SectionCards from "./sectionCards";
 
 export default function MainPage() {
+    const newArrivals = useRandomCards('new');
+    const topSelling = useRandomCards('top');
+
+    useEffect(() => {
+        newArrivals.getRandomCard();
+        topSelling.getRandomCard();
+    }, []);
+
     return(
         <main className="flex flex-col items-center">
             <Header />
-            <section className="flex flex-col gap-14 mt-[72px]">
-                <h2 className="font-integral text-5xl font-bold leading-[57.6px] text-center text-black uppercase">
-                    New Arrivals
-                </h2>
-            </section>
-            <section className="flex flex-col gap-14">
-                <h2 className="font-integral text-5xl font-bold leading-[57.6px] text-center text-black uppercase">
-
-                </h2>
-            </section>
+            {[
+                {
+                    title: "New Arrays",
+                    array: newArrivals.randomCards,
+                    link: "",
+                },
+                {
+                    title: 'Top selling',
+                    array: topSelling.randomCards,
+                    link: "",
+                }
+            ].map((item, index) =>(
+                <SectionCards 
+                    key={index}
+                    {...item}
+                />
+            ))}
             <SectionStyle 
                 arr={arrDressStyle}
                 num1={0}

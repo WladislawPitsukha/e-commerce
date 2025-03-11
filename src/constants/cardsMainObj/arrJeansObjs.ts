@@ -17,6 +17,7 @@ export const arrJeansObjs: ClotheObjProps[] = [
         img: Jeans2,
         title: "Faded Skinny Jeans",
         price: 210,
+        option: false,
         procent: 0
     }
 ];
