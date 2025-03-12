@@ -9,6 +9,7 @@ import { arrShirtsObjs } from "@/constants/cardsMainObj/arrShirtsObjs";
 import useRandomCards from "@/utils/randomCards";
 import { use, useEffect } from "react";
 import SectionCards from "./sectionCards";
+import SectionComment from "./sectionComment";
 
 export default function MainPage() {
     const newArrivals = useRandomCards('new');
@@ -46,6 +47,7 @@ export default function MainPage() {
                 num3={2}
                 num4={4}
             />
+            <SectionComment />
         </main>
     )
 }

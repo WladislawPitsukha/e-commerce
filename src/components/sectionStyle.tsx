@@ -52,7 +52,7 @@ export default function SectionStyle ({
     const numbers: any[] = [[num1, num2], [num3, num4]];
 
     return(
-        <section className="flex flex-col items-center mt-20 justify-around gap-16 bg-light-gray z-20 rounded-[40px]">
+        <section className="flex flex-col items-center mt-20 justify-around gap-16 bg-light-gray z-10 rounded-[40px]">
             <h2 className="font-integral text-4xl font-bold leading-[57.6px] text-center text-black uppercase mt-[70px]">
                 BROWSE BY dress STYLE
             </h2>
