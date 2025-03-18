@@ -6,6 +6,6 @@ export type TextlinkProps = {
 }
 
 type TextProps = {
-    title: string;
+    name: string;
     desc: string;
 }
