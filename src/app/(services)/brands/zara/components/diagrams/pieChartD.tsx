@@ -2,12 +2,13 @@
 
 import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
 import { arrGrowthZara } from "../../constants/arrSalesZara";
+import { useState } from "react";
 
 export default function PieChartD() {
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];
 
     return(
-        <article className="my-10 px-[50px] bg-white">
+        <article className="my-10 bg-white">
             <h2 className='text-3xl font-bold mb-8 text-black'>
                 Growth Distribution of Zara
             </h2>
@@ -21,16 +22,21 @@ export default function PieChartD() {
                     fill='white'
                     dataKey="growth"
                     nameKey="year"
-                    label={({name, percent}) => (
-                        `${name}: ${(percent * 100).toFixed(0)}%`
+                    label={({name}) => (
+                        `${name}`
                     )}
                 >
-                    {arrGrowthZara.map((entry, index) => (
-                        <Cell 
-                            key={`cell-${index}`}
-                            fill={COLORS[index % COLORS.length]}
-                        />
-                    ))}
+                    {arrGrowthZara.map((item, index) => {
+                        const [color, setColor] = useState("black")
+                        return(
+                            <Cell 
+                                key={`cell-${index}`}
+                                fill={color}
+                                onMouseEnter={() => setColor(COLORS[Math.floor(Math.random() * COLORS.length)])}
+                                onMouseLeave={() => setColor("black")}
+                            />
+                        )
+                    })}
                 </Pie>
                 <Tooltip />
                 <Legend />

@@ -37,3 +37,13 @@ body {
     background-position:  200% center;
   }
 }
+
+@layer components {
+  .list-with-circles {
+    @apply list-disc pl-5;
+  }
+
+  .list-with-circles li::marker {
+    @apply text-black;
+  }
+}
