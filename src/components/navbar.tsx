@@ -2,8 +2,8 @@ import { arrIconlinks } from "@/constants/navBar/arrIconLinks";
 import Link from "next/link";
 import React from "react";
 import { IconType } from "react-icons";
-import FormSearching from "./formSearching";
 import { arrTitleLinks } from "@/constants/navBar/arrTitleLinks";
+import FormSearching from "./FormSearching";
 
 export function CreateIcon({icon}: {icon: IconType}):JSX.Element {
     const Icon = icon;
