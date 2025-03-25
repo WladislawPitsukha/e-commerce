@@ -5,9 +5,8 @@ import SectionStyle from "./sectionStyle";
 import ClothesCard from "./clothesCard";
 
 import { arrDressStyle } from "@/constants/arrDressStyle";
-import { arrShirtsObjs } from "@/constants/cardsMainObj/arrShirtsObjs";
 import useRandomCards from "@/utils/randomCards";
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 import SectionCards from "./sectionCards";
 import SectionComment from "./sectionComment";
 

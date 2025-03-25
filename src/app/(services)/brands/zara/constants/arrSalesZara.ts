@@ -1,4 +1,5 @@
 import { SalesDataProps } from "../../types/typeSalesProps";
+import { TextlinkProps } from "../../types/typeTextLink"
 
 export const arrGrowthZara: SalesDataProps[] = [
     {
