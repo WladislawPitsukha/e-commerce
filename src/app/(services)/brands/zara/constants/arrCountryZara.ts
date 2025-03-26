@@ -3,7 +3,10 @@ import { CountryDataProps } from "../../types/typeCountryData";
 export const arrCountryData: CountryDataProps[] = [
     {
         id: 1,
-        country: "Spain",
+        country: {
+            countryName: "Spain",
+            coordinates: [40.4637, -3.7492]
+        },
         financeData: {
             revenue: 3.1,
             marketShare: 9.2,
@@ -13,7 +16,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 2,
-        country: "France",
+        country: {
+            countryName: "France",
+            coordinates: [46.2276, 2.2137]
+        },
         financeData: {
             revenue: 3.4,
             marketShare: 10.0,
@@ -23,7 +29,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 3,
-        country: "Italy",
+        country: {
+            countryName: "Italy",
+            coordinates: [41.8719, 12.5674]
+        },
         financeData: {
             revenue: 2.8,
             marketShare: 8.5,
@@ -31,9 +40,13 @@ export const arrCountryData: CountryDataProps[] = [
             onlinePresence: 85
         }
     },
+    
     {
         id: 4,
-        country: "United Kingdom",
+        country: {
+            countryName: "United Kingdom",
+            coordinates: [51.5074, -0.1278]
+        },
         financeData: {
             revenue: 3.2,
             marketShare: 9.8,
@@ -43,7 +56,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 5,
-        country: "Germany",
+        country: {
+            countryName: "Germany",
+            coordinates: [52.5200, 13.4050]
+        },
         financeData: {
             revenue: 3.5,
             marketShare: 10.2,
@@ -53,7 +69,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 6,
-        country: "USA",
+        country: {
+            countryName: "USA",
+            coordinates: [37.0902, -95.7129]
+        },
         financeData: {
             revenue: 4.8,
             marketShare: 12.5,
@@ -63,7 +82,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 7,
-        country: "China",
+        country: {
+            countryName: "China",
+            coordinates: [35.8617, 104.1954]
+        },
         financeData: {
             revenue: 5.2,
             marketShare: 15.8,
@@ -73,7 +95,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 8,
-        country: "Japan",
+        country: {
+            countryName: "Japan",
+            coordinates: [36.2048, 138.2529]
+        },
         financeData: {
             revenue: 2.9,
             marketShare: 8.8,
@@ -83,7 +108,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 9,
-        country: "South Korea",
+        country: {
+            countryName: "South Korea",
+            coordinates: [35.9078, 127.7669]
+        },
         financeData: {
             revenue: 2.4,
             marketShare: 7.2,
@@ -93,7 +121,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 10,
-        country: "Russia",
+        country: {
+            countryName: "Russia",
+            coordinates: [61.5240, 105.3188]
+        },
         financeData: {
             revenue: 2.1,
             marketShare: 6.5,
@@ -103,7 +134,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 11,
-        country: "India",
+        country: {
+            countryName: "India",
+            coordinates: [20.5937, 78.9629]
+        },
         financeData: {
             revenue: 1.8,
             marketShare: 5.4,
@@ -113,7 +147,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 12,
-        country: "Brazil",
+        country: {
+            countryName: "Brazil",
+            coordinates: [-14.2350, -51.9253]
+        },
         financeData: {
             revenue: 1.5,
             marketShare: 4.8,
@@ -123,7 +160,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 13,
-        country: "Mexico",
+        country: {
+            countryName: "Mexico",
+            coordinates: [23.6345, -102.5528]
+        },
         financeData: {
             revenue: 1.2,
             marketShare: 3.8,
@@ -133,7 +173,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 14,
-        country: "Canada",
+        country: {
+            countryName: "Canada",
+            coordinates: [56.1304, -106.3468]
+        },
         financeData: {
             revenue: 1.9,
             marketShare: 5.8,
@@ -143,7 +186,10 @@ export const arrCountryData: CountryDataProps[] = [
     },
     {
         id: 15,
-        country: "Australia",
+        country: {
+            countryName: "Australia",
+            coordinates: [-25.2744, 133.7751]
+        },
         financeData: {
             revenue: 1.6,
             marketShare: 4.9,

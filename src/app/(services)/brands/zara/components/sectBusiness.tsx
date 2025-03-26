@@ -6,7 +6,6 @@ import BarChartD from './diagrams/barChartD';
 import { arrCountryData } from '../constants/arrCountryZara';
 import MapChart from "./mapChart";
 
-
 export default function SectBusiness() {
     return(
         <section className="flex flex-col w-full h-auto justify-around items-center my-10 px-[50px]">
@@ -22,8 +21,8 @@ export default function SectBusiness() {
                     <article className='flex justify-center items-center p-[10px]'>
                         <ul className='text-black list-with-circles'>
                             {arrCountryData.map(item => (
-                                <li className='text-black font-bold text-[20px]'>
-                                    {item.country}
+                                <li key={item.id} className='text-black font text-[20px] cursor-pointer hover:text-gray-600'>
+                                    {item.country.countryName}
                                 </li>
                             ))}
                         </ul>
