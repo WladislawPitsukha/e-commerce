@@ -1,7 +1,12 @@
 export type CountryDataProps = {
     id: number;
-    country: string;
+    country: CountryData;
     financeData: FinanceData;
+}
+
+type CountryData = {
+    countryName: string;
+    coordinates?: [number, number];
 }
 
 type FinanceData = {
