@@ -47,3 +47,17 @@ body {
     @apply text-black;
   }
 }
+
+@layer components {
+  .leaflet-control-attribution {
+    display: none !important;
+  }
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+.leaflet-control-zoom {
+  display: none !important;
+}
