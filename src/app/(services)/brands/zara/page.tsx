@@ -1,8 +1,7 @@
 import Footer from "@/components/footer";
-import NavBar from "@/components/navbar";
 import ZaraPage from "./components/zaraPage";
 import HeaderZara from "./components/headZara";
-
+import NavBar from "@/components/navbar";
 
 export default function Home() {
   return (
