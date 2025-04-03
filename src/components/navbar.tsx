@@ -30,14 +30,15 @@ export default function NavBar() {
             </h2>
             <article className="flex justify-between items-center gap-6">
                 {arrTitleLinks.map((item, index) => (
-                    <Link href={`/${item.link}`}>
-                        <h3
-                            className="font-normal text-base leading-[21.6px] text-black"
-                            key={index}>
+                    <Link 
+                        href={`/${item.link}`}
+                        key={index}
+                    >
+                        <h3 className="font-normal text-base leading-[21.6px] text-black">
                             {item.title}
                         </h3>
                     </Link>
-                ))}                              
+                ))}                             
             </article>
             <Form 
                 action="/search"
