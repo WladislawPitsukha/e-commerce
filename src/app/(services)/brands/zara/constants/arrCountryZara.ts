@@ -40,7 +40,6 @@ export const arrCountryData: CountryDataProps[] = [
             onlinePresence: 85
         }
     },
-    
     {
         id: 4,
         country: {
@@ -120,19 +119,6 @@ export const arrCountryData: CountryDataProps[] = [
         }
     },
     {
-        id: 10,
-        country: {
-            countryName: "Russia",
-            coordinates: [61.5240, 105.3188]
-        },
-        financeData: {
-            revenue: 2.1,
-            marketShare: 6.5,
-            storeCount: 160,
-            onlinePresence: 75
-        }
-    },
-    {
         id: 11,
         country: {
             countryName: "India",
@@ -195,6 +181,19 @@ export const arrCountryData: CountryDataProps[] = [
             marketShare: 4.9,
             storeCount: 130,
             onlinePresence: 80
+        }
+    },
+    {
+        id: 16,
+        country: {
+            countryName: "Poland",
+            coordinates: [52.2297, 21.0122]
+        },
+        financeData: {
+            revenue: 1.7,
+            marketShare: 5.2,
+            storeCount: 145,
+            onlinePresence: 78
         }
     }
 ];
