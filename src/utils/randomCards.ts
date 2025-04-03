@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import React from "react";
 
 import { ClotheObjProps } from "@/types/typeClotheCard";
-
 import { arrShirtsObjs } from "@/constants/cardsMainObj/arrShirtsObjs";
 import { arrJeansObjs } from "@/constants/cardsMainObj/arrJeansObjs";
-import { arrTshirtsObjs } from "@/constants/cardsMainObj/arrTshirtsObjs";
 import { arrShortsObj } from "@/constants/cardsMainObj/arrShortsObjs";
+import { arrTshirtsObjs } from "@/constants/cardsMainObj/arrTshirtsObjs";
+
+
 
 export default function useRandomCards(sectionType: "new" | "top") {
     const [randomCards, setRandomCards] = useState<ClotheObjProps[]>([]);
