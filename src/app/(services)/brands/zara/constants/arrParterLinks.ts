@@ -1,6 +1,6 @@
 import { TextlinkProps } from "../../types/typeTextLink";
 
-export const arrPartLinks: TextlinkProps[] = [
+export const arrPartnerLinks: TextlinkProps[] = [
     {
         id: 1,
         text: {
