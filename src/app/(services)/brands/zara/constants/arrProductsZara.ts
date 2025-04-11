@@ -14,7 +14,7 @@ export type ProductPhotos = {
     link: string;
 }
 
-export const arrProductPhotos: ProductPhotos[] = [
+export const arrProductZara: ProductPhotos[] = [
     {
         id: 1,
         img: Zara1,
