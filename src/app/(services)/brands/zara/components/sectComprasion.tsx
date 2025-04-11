@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { BasicInfoProps, BrandsProps } from "../../types/typeBrands";
 import { arrBrands } from "../../constants/arrBrands";
-import { arrCountryData } from "../constants/arrCountryZara";
+import { arrCountryZara } from "../constants/arrCountryZara";
 import { CountryDataProps } from "../../types/typeCountryData";
 
 export function BlockArtComprasion({
@@ -42,11 +42,11 @@ export function BlockArtComprasion({
 
 export default function SectComprasion() {
     const averageValue = (propertyData: keyof CountryDataProps['financeData']):number => {
-        const sum = arrCountryData.reduce((acc, country) => {
+        const sum = arrCountryZara.reduce((acc, country) => {
             return acc + country.financeData[propertyData];
         }, 0)
 
-        return Number(Math.floor((sum / arrCountryData.length)).toFixed(2));
+        return Number(Math.floor((sum / arrCountryZara.length)).toFixed(2));
     }
 
     const tableHeadProps: string[] = [
@@ -67,7 +67,7 @@ export default function SectComprasion() {
         0,
     ];
 
-    const arrBlockBrands = [arrBrands[0].brand, arrBrands[1].brand, arrBrands[2].brand, arrBrands[3].brand, arrBrands[4].brand];
+    const arrBlockBrands = arrBrands.map(obj => obj.brand).filter(brand => brand !== undefined)
 
     return(
         <section className="flex items-start justify-evenly w-full h-auto my-10 px-[50px] gap-4 bg-white">
