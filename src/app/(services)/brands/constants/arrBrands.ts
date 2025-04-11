@@ -1,9 +1,9 @@
 import { BrandsProps } from "../types/typeBrands";
-import { arrCountryData } from "../zara/constants/arrCountryZara";
+import { arrCountryZara } from "../zara/constants/arrCountryZara";
 import { arrGrowthZara } from "../zara/constants/arrGrowthZara";
-import { arrPartnerLinks } from "../zara/constants/arrParterLinks";
-import { arrProductPhotos } from "../zara/constants/arrProductsZara";
-import { arrSalesZara } from "../zara/constants/arrSalesZara"; 
+import { arrPartnersZara } from "../zara/constants/arrPartnersZara";
+import { arrProductZara } from "../zara/constants/arrProductsZara";
+import { arrSalesZara } from "../zara/constants/arrSalesZara";
 
 export const arrBrands: BrandsProps[] = [
     {
@@ -21,22 +21,22 @@ export const arrBrands: BrandsProps[] = [
                 "On the big day, her dress stood out—not for its luxury, but for the story it told. The judges were captivated, and Zara won. More than just a prize, the victory opened doors to a prestigious fashion school, turning her dreams into reality.",
                 "On the big day, her dress stood out—not for its luxury, but for the emotion woven into every thread. The judges were captivated by the originality and soul in her design. As they announced her name as the winner, tears filled Zara’s eyes. It was more than just a victory—it was validation that her dreams were possible.",
             ],
-            photos: arrProductPhotos,
+            photos: arrProductZara,
         },
         business: {
-            countryData: arrCountryData,
+            countryData: arrCountryZara,
             grouthData: arrGrowthZara,
             salesData: arrSalesZara,
         },
-        partners: arrPartnerLinks,
+        partners: arrPartnersZara,
         comprasions: [],
-    },
+    }, // TODO: Add more brands here
     /*
     {
         brand: {
             id: 2,
             name: "Calvin Klein",
-            links: {
+            links: {а
                 mainLink: "/brands/calvinklein",
                 webpageLink: "https://www.calvinklein.com"
             }
@@ -55,7 +55,7 @@ export const arrBrands: BrandsProps[] = [
     {
         brand: {
             id: 4,
-            name: "Dolce & Gabbana",
+            name: "Prada",
             links: {
                 mainLink: "/brands/dolcegabbana",
                 webpageLink: "https://www.dolcegabbana.com"

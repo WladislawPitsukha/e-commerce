@@ -4,7 +4,7 @@ import "../globals.css"
 import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { arrCountryData } from '../constants/arrCountryZara';
+import { arrCountryZara } from "../constants/arrCountryZara";
 
 interface MapChartProps {
     hoveredCountry: string | null;
@@ -21,7 +21,7 @@ export default function MapChart({hoveredCountry, selectedCountry}: MapChartProp
         if (selectedCountry) {
             highlightCountry(selectedCountry);
             
-            const selectedData = arrCountryData.find(
+            const selectedData = arrCountryZara.find(
                 obj => obj.country.countryName === selectedCountry
             );
             
@@ -75,7 +75,7 @@ export default function MapChart({hoveredCountry, selectedCountry}: MapChartProp
                     shadowSize: [41, 41]
                 });
                 
-                arrCountryData.forEach(obj => {
+                arrCountryZara.forEach(obj => {
                     if (obj.country.coordinates) {
                         const [lat, lng] = obj.country.coordinates;
                         const marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);

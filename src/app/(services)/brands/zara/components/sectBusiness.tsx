@@ -4,10 +4,10 @@ import "../globals.css"
 
 import PieChartD from './diagrams/pieChartD';
 import BarChartD from './diagrams/barChartD';
-import { arrCountryData } from '../constants/arrCountryZara';
 import MapChart from "./mapChart";
 
 import { useState } from "react";
+import { arrCountryZara } from "../constants/arrCountryZara";
 
 export default function SectBusiness() {
     const [hoveredCountry, setHovered] = useState<string | null>(null);
@@ -30,7 +30,7 @@ export default function SectBusiness() {
                 <div className='flex justify-evenly items-center w-full'>
                     <article className='flex justify-center items-center p-[10px]'>
                         <ul className='text-black list-with-circles'>
-                            {arrCountryData.map(obj => (
+                            {arrCountryZara.map(obj => (
                                 <li 
                                     key={obj.id} 
                                     className='text-black font text-[20px] cursor-pointer hover:text-gray-600'
