@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { arrProductPhotos } from "../constants/arrProductsZara";
-import AnimatedTitle from "./animatedTitle";
 import Image from "next/image";
+
+import AnimatedTitle from "./animatedTitle";
+import { arrProductZara } from "../constants/arrProductsZara";
 
 export default function HeaderZara() {
     return(
@@ -9,7 +10,7 @@ export default function HeaderZara() {
             <AnimatedTitle title="Zara" />
             <div className="flex justify-between items-start gap-[100px]">
                 <div className="grid grid-cols-3 gap-2 w-auto h-auto">
-                    {arrProductPhotos.map((item) => (
+                    {arrProductZara.map((item) => (
                         <Link href={item.link}>
                             <div className="border-double w-auto h-auto border-black bg-white p-2 rounded-2xl" key={item.id}>
                                 <Image 

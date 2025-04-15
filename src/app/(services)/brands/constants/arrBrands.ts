@@ -1,44 +1,96 @@
+import { arrCountryPrada } from "../prada/constants/arrCountryPrada";
+import { arrGrowthPrada } from "../prada/constants/arrGrowthPrada";
+import { arrPartnersPrada } from "../prada/constants/arrPartnersPrada";
+import { arrProductPrada } from "../prada/constants/arrProductsZara";
+import { arrSalesPrada } from "../prada/constants/arrSalesPrada";
 import { BrandsProps } from "../types/typeBrands";
+import { arrCountryZara } from "../zara/constants/arrCountryZara";
+import { arrGrowthZara } from "../zara/constants/arrGrowthZara";
+import { arrPartnersZara } from "../zara/constants/arrPartnersZara";
+import { arrProductZara } from "../zara/constants/arrProductsZara";
+import { arrSalesZara } from "../zara/constants/arrSalesZara";
 
 export const arrBrands: BrandsProps[] = [
     {
-        id: 1,
-        name: "Zara",
-        links: {
-            mainLink: "/brands/zara",
-            webpageLink: "https://www.zara.com"
+        brand: {
+            id: 1,
+            name: "Zara",
+            links: {
+                mainLink: "/brands/zara",
+                webpageLink: "https://www.zara.com"
+            },
+        },
+        description: {
+            story: [
+                "Zara had always dreamed of becoming a fashion designer, but growing up in a small town, she had little more than her imagination and determination. When a local design contest was announced, she saw her chance. With no fancy fabrics, she collected scraps, sewing them together with creativity and heart.",
+                "On the big day, her dress stood out—not for its luxury, but for the story it told. The judges were captivated, and Zara won. More than just a prize, the victory opened doors to a prestigious fashion school, turning her dreams into reality.",
+                "On the big day, her dress stood out—not for its luxury, but for the emotion woven into every thread. The judges were captivated by the originality and soul in her design. As they announced her name as the winner, tears filled Zara’s eyes. It was more than just a victory—it was validation that her dreams were possible.",
+            ],
+            photos: arrProductZara,
+        },
+        business: {
+            countryData: arrCountryZara,
+            grouthData: arrGrowthZara,
+            salesData: arrSalesZara,
+        },
+        partners: arrPartnersZara,
+        comprasions: [],
+    }, // TODO: Add more brands here
+    /*
+    {
+        brand: {
+            id: 2,
+            name: "Calvin Klein",
+            links: {а
+                mainLink: "/brands/calvinklein",
+                webpageLink: "https://www.calvinklein.com"
+            }
         }
     },
     {
-        id: 2,
-        name: "Calvin Klein",
-        links: {
-            mainLink: "/brands/calvinklein",
-            webpageLink: "https://www.calvinklein.com"
+        brand: {
+            id: 3,
+            name: "Gucci",
+            links: {
+                mainLink: "/brands/gucci",
+                webpageLink: "https://www.gucci.com"
+            }
         }
     },
-    {
-        id: 3,
-        name: "Gucci",
-        links: {
-            mainLink: "/brands/gucci", 
-            webpageLink: "https://www.gucci.com"
-        }
-    },
-    {
-        id: 4,
-        name: "Prada",
-        links: {
-            mainLink: "/brands/prada",
-            webpageLink: "https://www.prada.com"
-        }
-    },
-    {
-        id: 5,
-        name: "Versace",
-        links: {
-            mainLink: "/brands/versace",
-            webpageLink: "https://www.versace.com"
+    {  //TODO: add photos for prada
+        brand: {
+            id: 5,
+            name: "Versace",
+            links: {
+                mainLink: "/brands/versace",
+                webpageLink: "https://www.versace.com"
+            }
         }
     }
+    */
+    {
+        brand: {
+            id: 4,
+            name: "Prada",
+            links: {
+                mainLink: "/brands/dolcegabbana",
+                webpageLink: "https://www.dolcegabbana.com"
+            }
+        },
+        description: {
+            story: [
+                "",
+                "",
+                "",
+            ],
+            photos: arrProductPrada,
+        },
+        business: {
+            countryData: arrCountryPrada,
+            grouthData: arrGrowthPrada,
+            salesData: arrSalesPrada, 
+        },
+        partners: arrPartnersPrada,
+        comprasions: [],
+    },
 ];

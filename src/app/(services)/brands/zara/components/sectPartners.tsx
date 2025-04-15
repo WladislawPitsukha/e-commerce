@@ -1,7 +1,7 @@
 
-import { arrPartLinks } from "../constants/arrPartLinks";
 import { TextlinkProps } from "../../types/typeTextLink"
 import Link from "next/link"
+import { arrPartnersZara } from "../constants/arrPartnersZara";
 
 export function BlockPartner({
     id,
@@ -38,7 +38,7 @@ export function BlockPartner({
 export default function SectPartners() {
     return(
         <section className="flex bg-black w-full justify-between h-auto px-[50px] py-10">
-            {arrPartLinks.map((obj) =>(
+            {arrPartnersZara.map((obj) =>(
                 <BlockPartner 
                     {...obj}
                 />

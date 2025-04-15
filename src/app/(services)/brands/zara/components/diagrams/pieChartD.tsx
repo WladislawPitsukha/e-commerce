@@ -1,8 +1,8 @@
 "use client"
 
 import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
-import { arrGrowthZara } from "../../constants/arrSalesZara";
 import { useState } from "react";
+import { arrGrowthZara } from "../../constants/arrGrowthZara";
 
 export default function PieChartD() {
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];

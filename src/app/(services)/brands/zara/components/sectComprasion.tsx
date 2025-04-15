@@ -1,23 +1,32 @@
 import { Grid, Table, TableBody, TableCell, TableContainer, TableHead } from "@mui/material";
 import Link from "next/link";
 
-import { BrandsProps } from "../../types/typeBrands";
+import { BasicInfoProps, BrandsProps } from "../../types/typeBrands";
 import { arrBrands } from "../../constants/arrBrands";
-import { arrCountryData } from "../constants/arrCountryZara";
+import { arrCountryZara } from "../constants/arrCountryZara";
 import { CountryDataProps } from "../../types/typeCountryData";
 
-export function BlockArtComprasion(arr: BrandsProps) {
+export function BlockArtComprasion({
+    id, 
+    name,
+    links,
+}: BasicInfoProps) {
+    if (!id || !name || !links) return null;
+
     return(
-        <article className="flex flex-col items-center justify-between">
+        <article 
+            className="flex flex-col items-center justify-between" 
+            key={id}
+        >
             <h4 className="text-black">
-                {arr.name}
+                {name}
             </h4>
             <div>
                 {[{
-                    link: arr.links.mainLink,
+                    link: links.mainLink,
                     title: "Landing",
                 }, {
-                    link: arr.links.webpageLink,
+                    link: links.webpageLink,
                     title: "The website",
                 }].map((obj, index) => (
                     <Link href={obj.link} key={index}>
@@ -33,11 +42,11 @@ export function BlockArtComprasion(arr: BrandsProps) {
 
 export default function SectComprasion() {
     const averageValue = (propertyData: keyof CountryDataProps['financeData']):number => {
-        const sum = arrCountryData.reduce((acc, country) => {
+        const sum = arrCountryZara.reduce((acc, country) => {
             return acc + country.financeData[propertyData];
         }, 0)
 
-        return Number(Math.floor((sum / arrCountryData.length)).toFixed(2));
+        return Number(Math.floor((sum / arrCountryZara.length)).toFixed(2));
     }
 
     const tableHeadProps: string[] = [
@@ -58,9 +67,15 @@ export default function SectComprasion() {
         0,
     ];
 
+    const arrBlockBrands = arrBrands.map(obj => obj.brand).filter(brand => brand !== undefined)
+
     return(
         <section className="flex items-start justify-evenly w-full h-auto my-10 px-[50px] gap-4 bg-white">
-            <BlockArtComprasion {...arrBrands[0]} />
+            <BlockArtComprasion  
+                id={arrBlockBrands[0].id}
+                name={arrBlockBrands[0].name}
+                links={arrBlockBrands[0].links}
+            />
             <TableContainer>
                 <Table aria-label="simple table">
                     <TableHead>
@@ -89,9 +104,9 @@ export default function SectComprasion() {
                 rowSpacing={2} 
                 columnSpacing={2}
             >
-                {arrBrands.slice(1, 5).map((brand) => (
-                    <Grid size={5}>
-                        <BlockArtComprasion {...brand} key={brand.id} />
+                {arrBlockBrands.slice(1, 5).map((obj) => (
+                    <Grid size={5} key={obj?.id}>
+                        <BlockArtComprasion {...obj} />
                     </Grid>
                 ))}
             </Grid>

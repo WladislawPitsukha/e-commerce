@@ -1,6 +1,6 @@
 import { CountryDataProps } from "../../types/typeCountryData";
 
-export const arrCountryData: CountryDataProps[] = [
+export const arrCountryZara: CountryDataProps[] = [
     {
         id: 1,
         country: {
