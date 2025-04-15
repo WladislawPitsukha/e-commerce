@@ -1,3 +1,8 @@
+import { arrCountryPrada } from "../prada/constants/arrCountryPrada";
+import { arrGrowthPrada } from "../prada/constants/arrGrowthPrada";
+import { arrPartnersPrada } from "../prada/constants/arrPartnersPrada";
+import { arrProductPrada } from "../prada/constants/arrProductsZara";
+import { arrSalesPrada } from "../prada/constants/arrSalesPrada";
 import { BrandsProps } from "../types/typeBrands";
 import { arrCountryZara } from "../zara/constants/arrCountryZara";
 import { arrGrowthZara } from "../zara/constants/arrGrowthZara";
@@ -52,17 +57,7 @@ export const arrBrands: BrandsProps[] = [
             }
         }
     },
-    {
-        brand: {
-            id: 4,
-            name: "Prada",
-            links: {
-                mainLink: "/brands/dolcegabbana",
-                webpageLink: "https://www.dolcegabbana.com"
-            }
-        }
-    },
-    {
+    {  //TODO: add photos for prada
         brand: {
             id: 5,
             name: "Versace",
@@ -73,4 +68,29 @@ export const arrBrands: BrandsProps[] = [
         }
     }
     */
+    {
+        brand: {
+            id: 4,
+            name: "Prada",
+            links: {
+                mainLink: "/brands/dolcegabbana",
+                webpageLink: "https://www.dolcegabbana.com"
+            }
+        },
+        description: {
+            story: [
+                "",
+                "",
+                "",
+            ],
+            photos: arrProductPrada,
+        },
+        business: {
+            countryData: arrCountryPrada,
+            grouthData: arrGrowthPrada,
+            salesData: arrSalesPrada, 
+        },
+        partners: arrPartnersPrada,
+        comprasions: [],
+    },
 ];
