@@ -1,5 +1,6 @@
-import { ProductPhotos } from "../zara/constants/arrProductsZara"
+
 import { CountryDataProps } from "./typeCountryData"
+import { ProductProps } from "./typeProductProps"
 import { SalesDataProps } from "./typeSalesProps"
 import { TextlinkProps } from "./typeTextLink"
 
@@ -13,7 +14,7 @@ export type BrandsProps = {
     brand: BasicInfoProps,
     description: {
         story: string[],
-        photos: ProductPhotos[],
+        photos: ProductProps[],
     },
     business: BusinessProps,
     partners: TextlinkProps[],
