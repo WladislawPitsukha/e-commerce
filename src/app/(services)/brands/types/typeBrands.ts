@@ -28,6 +28,6 @@ export type BrandsLinksProps = {
 
 export type BusinessProps = {
     countryData: CountryDataProps[],
-    grouthData: SalesDataProps[],
+    growthData: SalesDataProps[],
     salesData: SalesDataProps[],
 }   
