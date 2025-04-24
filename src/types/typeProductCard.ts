@@ -1,0 +1,28 @@
+import { ComSectProps } from "./typeComSect";
+
+export type ClotheMainObjProps = {
+    id: number;
+    img: any;
+    title: string;
+    price: {
+        mainPrice: number;
+        option: boolean;
+        procent: number;
+    }
+}
+
+export type ProductCardProps = ClotheMainObjProps & {
+    images: any[]
+    description: string;
+    details: {
+        width: number;
+        height: number;
+        size: string;
+        colors: string[];
+    };
+    reviews: ComSectProps[];
+    faqs: {
+        question: string;
+        answer: string;
+    }[];
+}
