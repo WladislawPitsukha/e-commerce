@@ -35,6 +35,8 @@ export function BlockPartner({
     )
 }
 
+//TODO: add params for the component
+
 export default function SectPartners() {
     return(
         <section className="flex bg-black w-full justify-between h-auto px-[50px] py-10">

@@ -9,6 +9,8 @@ import MapChart from "./mapChart";
 import { useState } from "react";
 import { arrCountryZara } from "../constants/arrCountryZara";
 
+//TODO: add params for the components
+
 export default function SectBusiness() {
     const [hoveredCountry, setHovered] = useState<string | null>(null);
     const [selectedCountry, setSelectedCountry] = useState<string | null>(null);

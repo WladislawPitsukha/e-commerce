@@ -4,6 +4,8 @@ import Image from "next/image";
 import AnimatedTitle from "./animatedTitle";
 import { arrProductZara } from "../constants/arrProductsZara";
 
+//TODO: add params for the component
+
 export default function HeaderZara() {
     return(
         <section className="flex flex-col items-center gap-10 bg-black px-[50px] py-[50px]">
