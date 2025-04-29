@@ -1,15 +1,13 @@
-import { ClotheObjProps } from "@/types/typeClotheCard"
-
+import { ClotheMainObjProps } from "@/types/typeProductCard"
 import Image from "next/image"
 
 export default function ClothesCard({
     id, 
     img, 
     title, 
-    price, 
-    option, 
-    procent
-}: ClotheObjProps) {
+    price,
+}: ClotheMainObjProps) {
+    const { mainPrice, option, procent } = price;
     return(
         <article 
             className="flex flex-col items-start" 
@@ -29,11 +27,11 @@ export default function ClothesCard({
                 <div className="flex justify gap-[10px]">
                     {option === true ? (
                         <h4 className={`font-satoshi text-xl font-bold leading-[27px] text-left text-black`}>
-                            ${Math.round(price - ((price * procent) / 100))}
+                            ${Math.round(mainPrice - ((mainPrice * procent) / 100))}
                         </h4>
                     ) : null}
                     <h4 className={`${option === true ? "text-[rgba(0,0,0,0.4)] line-through font-satoshi text-xl font-bold leading-[27px] text-left" : "font-satoshi text-xl font-bold leading-[27px] text-left text-black"}`}>
-                        ${price}
+                        ${mainPrice}
                     </h4>
                     {option === true ? (
                         <div className={`bg-[rgba(255,51,51,0.1)] px-[13.5px] py-[6px] rounded-full`}>
