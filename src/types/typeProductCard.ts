@@ -22,6 +22,7 @@ export type ProductCardProps = ClotheMainObjProps & {
     };
     reviews: ComSectProps[];
     faqs: {
+        id: number;
         question: string;
         answer: string;
     }[];
