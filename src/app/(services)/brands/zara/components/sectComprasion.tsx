@@ -1,7 +1,7 @@
 import { Grid, Table, TableBody, TableCell, TableContainer, TableHead } from "@mui/material";
 import Link from "next/link";
 
-import { BasicInfoProps, BrandsProps } from "../../types/typeBrands";
+import { BasicInfoProps } from "../../types/typeBrands";
 import { arrBrands } from "../../constants/arrBrands";
 import { arrCountryZara } from "../constants/arrCountryZara";
 import { CountryDataProps } from "../../types/typeCountryData";

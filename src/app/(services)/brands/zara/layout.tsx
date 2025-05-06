@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {Roboto_Mono} from 'next/font/google';
-import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 
 export const roboto_mono = Roboto_Mono({
@@ -23,10 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto_mono.className}>
+      <body className={roboto_mono.className} style={{
+        backgroundColor: "white",
+      }}>
         <NavBar />
         {children}
-        <Footer />
       </body>
     </html>
   );

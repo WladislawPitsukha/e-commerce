@@ -2,17 +2,18 @@
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { arrSalesZara } from '../../constants/arrSalesZara';
+import { SalesDataProps } from '../../../types/typeSalesProps';
 
-export default function BarChartD() {
+export default function BarChartD({ arrSales }: { arrSales: SalesDataProps[]}) {
     return(
         <article className="flex flex-col items-center my-10 bg-white">
             <h2 className="text-3xl font-bold mb-8 text-black">
-                Sales of Zara for 2020-2025
+                Growth Distribution of Zara
             </h2>
             <BarChart
                 width={500}
                 height={400}
-                data={arrSalesZara}
+                data={arrSales}
                 margin={{
                     top: 5,
                     right: 30,

@@ -30,6 +30,8 @@ import { arrSalesZara } from "../zara/constants/arrSalesZara";
 
 import { BrandsProps } from "../types/typeBrands";
 
+//TODO: add some objs for comp COMPRASIONS for all components of arrBrands
+
 export const arrBrands: BrandsProps[] = [
     {
         brand: {
