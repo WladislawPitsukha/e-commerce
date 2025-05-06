@@ -3,18 +3,19 @@
 import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
 import { useState } from "react";
 import { arrGrowthZara } from "../../constants/arrGrowthZara";
+import { SalesDataProps } from "../../../types/typeSalesProps";
 
-export default function PieChartD() {
+export default function PieChartD({ arrGrowth }: {arrGrowth: SalesDataProps[]}) {
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];
 
     return(
         <article className="my-10 bg-white">
             <h2 className='text-3xl font-bold mb-8 text-black'>
-                Growth Distribution of Zara
+                Sales of Zara for 2020-2025
             </h2>
             <PieChart width={400} height={400}>
                 <Pie
-                    data={arrGrowthZara}
+                    data={arrGrowth}
                     cx={200}
                     cy={200}
                     labelLine={false}
@@ -26,7 +27,7 @@ export default function PieChartD() {
                         `${name}`
                     )}
                 >
-                    {arrGrowthZara.map((item, index) => {
+                    {arrGrowth.map((item, index) => {
                         const [color, setColor] = useState("black")
                         return(
                             <Cell 

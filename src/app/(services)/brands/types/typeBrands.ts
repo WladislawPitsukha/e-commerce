@@ -18,7 +18,7 @@ export type BrandsProps = {
     },
     business: BusinessProps,
     partners: TextlinkProps[],
-    comprasions: [BasicInfoProps, BasicInfoProps, BasicInfoProps, BasicInfoProps] | [],
+    comprasions?: [BasicInfoProps, BasicInfoProps, BasicInfoProps, BasicInfoProps] | [],
 }
 
 export type BrandsLinksProps = {
