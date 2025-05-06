@@ -4,14 +4,15 @@ import "../globals.css"
 import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { arrCountryZara } from "../constants/arrCountryZara";
+import { CountryDataProps } from "../../types/typeCountryData";
 
 interface MapChartProps {
     hoveredCountry: string | null;
     selectedCountry: string | null;
+    countryAll: CountryDataProps[];
 }
 
-export default function MapChart({hoveredCountry, selectedCountry}: MapChartProps) {
+export default function MapChart({hoveredCountry, selectedCountry, countryAll}: MapChartProps) {
     const mapRef = useRef<L.Map | null>(null);
     const markersRef = useRef<L.Marker[]>([]);
     const [highlightedCountry, setHighlightedCountry] = useState<string | null>(null);
@@ -21,7 +22,7 @@ export default function MapChart({hoveredCountry, selectedCountry}: MapChartProp
         if (selectedCountry) {
             highlightCountry(selectedCountry);
             
-            const selectedData = arrCountryZara.find(
+            const selectedData = countryAll.find(
                 obj => obj.country.countryName === selectedCountry
             );
             
@@ -54,7 +55,6 @@ export default function MapChart({hoveredCountry, selectedCountry}: MapChartProp
         
         const initMap = async () => {
             try {
-                // Динамический импорт Leaflet только на клиенте
                 L = (await import('leaflet')).default;
                 
                 const map = L.map('map').setView([20, 0], 2);
@@ -75,7 +75,7 @@ export default function MapChart({hoveredCountry, selectedCountry}: MapChartProp
                     shadowSize: [41, 41]
                 });
                 
-                arrCountryZara.forEach(obj => {
+                countryAll.forEach(obj => {
                     if (obj.country.coordinates) {
                         const [lat, lng] = obj.country.coordinates;
                         const marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);

@@ -28,21 +28,30 @@ export function BlockPartner({
                 </h3>
             </div>
             <hr className="border rounded-full border-black h-full"/>
-            <p className="font-integral text-xl w-[12rem] text-black">
+            <p className="font-inegral text-xl w-[12rem] text-black">
                 {desc}
             </p>
         </article>
     )
 }
 
-export default function SectPartners() {
+//TODO: add params for the component
+
+export default function SectPartners({ partners }:{
+    partners: TextlinkProps[]
+}) {
     return(
         <section className="flex bg-black w-full justify-between h-auto px-[50px] py-10">
-            {arrPartnersZara.map((obj) =>(
-                <BlockPartner 
-                    {...obj}
-                />
-            ))}
+            {partners?.length > 0 ? (
+                partners.map((obj) => (
+                    <BlockPartner 
+                        key={obj.id}
+                        {...obj}
+                    />
+                ))
+            ) : (
+                <p className="text-white">No partners available</p>
+            )}
         </section>
     )
 }

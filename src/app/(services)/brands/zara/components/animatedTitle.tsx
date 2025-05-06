@@ -7,6 +7,8 @@ interface AnimateTitleProps {
     className?: string;
 }
 
+//TODO: add params for the component
+
 export default function AnimatedTitle({
     title,
     className = "text-white font-integral font-bold text-9xl uppercase",
