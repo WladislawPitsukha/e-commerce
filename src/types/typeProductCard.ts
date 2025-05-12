@@ -4,6 +4,7 @@ export type ClotheMainObjProps = {
     id: number;
     img: any;
     title: string;
+    grade: number;
     price: {
         mainPrice: number;
         option: boolean;

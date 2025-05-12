@@ -9,6 +9,7 @@ export const summerwearProducts: ProductCardProps[] = [
         id: 1,
         img: SummerwearZara1_1,
         title: "Summerwear T-shirt",
+        grade: 4.5,
         price: {
             mainPrice: 49.99,
             option: true,
