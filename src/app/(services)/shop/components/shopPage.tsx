@@ -14,12 +14,11 @@ interface ShopLayoutProps {
 
 export default function ShopPage({ children, category }: ShopLayoutProps) {
     return(
-        <div className="flex flex-col justify-center bg-white">
+        <div className="flex flex-col justify-center bg-black">
             <NavBar />
             <main className="flex justify-between items-start px-[50px] py-[30px]">
                 <aside className="w-[250px] sticky top-[100px]">
                     <h2 className="text-2xl font-bold mb-4">Categories</h2>
-                    
                 </aside>
                 <section className="flex-1 ml-8">
                     <h1 className="text-3xl font-bold mb-6">

@@ -8,6 +8,7 @@ export const arrShortsObj: ClotheMainObjProps[] = [
         img: Short1,
         title: "Loose Fit Bermuda Shorts",
         grade: 4.5,
+        images: [],
         price: {
             mainPrice: 80,
             option: false,

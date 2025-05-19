@@ -1,7 +1,6 @@
 
 import { TextlinkProps } from "../../types/typeTextLink"
 import Link from "next/link"
-import { arrPartnersZara } from "../constants/arrPartnersZara";
 
 export function BlockPartner({
     id,
@@ -34,8 +33,6 @@ export function BlockPartner({
         </article>
     )
 }
-
-//TODO: add params for the component
 
 export default function SectPartners({ partners }:{
     partners: TextlinkProps[]

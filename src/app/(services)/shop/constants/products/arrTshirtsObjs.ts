@@ -10,6 +10,7 @@ export const arrTshirtsObjs: ClotheMainObjProps[] = [
         img: TShirt1,
         title: "T-shirt with Tape Details",
         grade: 4.5,
+        images: [],
         price: {
             mainPrice: 120,
             option: false,
@@ -21,6 +22,7 @@ export const arrTshirtsObjs: ClotheMainObjProps[] = [
         img: TShirt2,
         title: "Sleeve Striped T-shirt",
         grade: 5,
+        images: [],
         price: {
             mainPrice: 160,
             option: true,
@@ -32,6 +34,7 @@ export const arrTshirtsObjs: ClotheMainObjProps[] = [
         img: TShirt3,
         title: "Courage Graphic T-shirt",
         grade: 4,
+        images: [],
         price: {
             mainPrice: 145,
             option: false,

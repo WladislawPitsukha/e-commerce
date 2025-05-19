@@ -9,6 +9,7 @@ export const arrShirtsObjs: ClotheMainObjProps [] = [
         img: Shirt1,
         title: "Checkered Shirt",
         grade: 4.5,
+        images: [],
         price: {
             mainPrice: 180,
             option: false,
@@ -20,6 +21,7 @@ export const arrShirtsObjs: ClotheMainObjProps [] = [
         img: Shirt2,
         title: "Vertical Striped Shirt",
         grade: 3.0,
+        images: [],
         price: {
             mainPrice: 232,
             option: true,
