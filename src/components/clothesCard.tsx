@@ -1,13 +1,39 @@
 import { ClotheMainObjProps } from "@/types/typeProductCard"
+
 import Image from "next/image"
+
+import { useEffect, useState } from "react";
+import { CreationGrade } from "./creationGrade";
+import { CreationPrice } from "./creationPrice";
 
 export default function ClothesCard({
     id, 
     img, 
     title, 
+    grade,
     price,
 }: ClotheMainObjProps) {
+
     const { mainPrice, option, procent } = price;
+    const [currentGrade, setCurrentGrade] = useState(grade);
+    const [currentPrice, setCurrentPrice] = useState({
+        mainPrice,
+        option,
+        procent
+    });
+
+    useEffect(() => {
+        setCurrentGrade(grade);
+    }, [grade]);
+
+    useEffect(() => {
+        setCurrentPrice({
+            mainPrice,
+            option,
+            procent
+        });
+    }, [mainPrice, option, procent]);
+
     return(
         <article 
             className="flex flex-col items-start" 
@@ -24,23 +50,15 @@ export default function ClothesCard({
                 <h5 className="font-satoshi text-xl font-bold leading-[32.4px] text-left text-black">
                     {title}
                 </h5>
-                <div className="flex justify gap-[10px]">
-                    {option === true ? (
-                        <h4 className={`font-satoshi text-xl font-bold leading-[27px] text-left text-black`}>
-                            ${Math.round(mainPrice - ((mainPrice * procent) / 100))}
-                        </h4>
-                    ) : null}
-                    <h4 className={`${option === true ? "text-[rgba(0,0,0,0.4)] line-through font-satoshi text-xl font-bold leading-[27px] text-left" : "font-satoshi text-xl font-bold leading-[27px] text-left text-black"}`}>
-                        ${mainPrice}
-                    </h4>
-                    {option === true ? (
-                        <div className={`bg-[rgba(255,51,51,0.1)] px-[13.5px] py-[6px] rounded-full`}>
-                            <h5 className={`font-satoshi text-xs font-medium leading-[16.2px] text-center text-[rgba(255,51,51,1)]`}>
-                                -{procent}%
-                            </h5>
-                        </div>
-                    ) : null}
-                </div>
+                <CreationGrade
+                    grade={currentGrade} 
+                    className="black" 
+                />
+                <CreationPrice
+                    mainPrice={currentPrice.mainPrice} 
+                    option={currentPrice.option} 
+                    procent={currentPrice.procent}
+                />
             </div>
         </article>
     )

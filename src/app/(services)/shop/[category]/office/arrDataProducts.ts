@@ -13,6 +13,7 @@ export const officewearProducts: ProductCardProps[] = [
         id: 1,
         img: OfficewearCalvin1_1,
         title: 'Black Shirt Calvin Klein',
+        grade: 4.5,
         price: {
             mainPrice: 89.99,
             option: true,
@@ -83,6 +84,7 @@ export const officewearProducts: ProductCardProps[] = [
         id: 2,
         img: OfficewearZara1_1,
         title: 'Black T-shirt Zara',
+        grade: 2,
         price: {
             mainPrice: 39.99,
             option: false,

@@ -9,6 +9,7 @@ export const partywearProducts: ProductCardProps[] = [
         id: 1,
         img: PartystyleCalvinklein1_1,
         title: 'Party Dress',
+        grade: 2,
         price: {
             mainPrice: 79.99,
             option: true,

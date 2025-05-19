@@ -10,8 +10,6 @@ import { useState } from "react";
 import { CountryDataProps } from "../../types/typeCountryData";
 import { SalesDataProps } from "../../types/typeSalesProps";
 
-//TODO: add params for the components
-
 export default function SectBusiness({ country, growth, sales }: {
     country: CountryDataProps[],
     growth: SalesDataProps[],

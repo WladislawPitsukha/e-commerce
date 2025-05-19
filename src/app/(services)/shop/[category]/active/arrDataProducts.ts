@@ -9,6 +9,7 @@ export const activewearProducts: ProductCardProps[] = [
         id: 1,
         img: ActivewearNike1_1,
         title: "Nike Sports T-shirt",
+        grade: 4.5,
         price: {
             mainPrice: 59.99,
             option: true,
@@ -22,9 +23,53 @@ export const activewearProducts: ProductCardProps[] = [
         description: 'This Nike sports t-shirt is perfect for your workout sessions. Made from moisture-wicking fabric, it keeps you cool and comfortable during intense activities.',
         details: {
             width: 500,
-            height: 700,
-            size: "S, M, L, XL",
-            colors: ["Black", "White", "Gray"],
+            height: 700, //"S, M, L, XL"
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Meduim",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "Green color",
+                    option: "#006400",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Red color",
+                    option: "#8B0000",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {

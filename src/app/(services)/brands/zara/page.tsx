@@ -9,9 +9,6 @@ import { BrandsProps } from "../types/typeBrands";
 import { useEffect, useState } from "react";
 import { arrBrands } from "../constants/arrBrands";
 
-//TODO: torn apart the func for all components
-//TODO: make params for all components 
-
 export default function Home() {
   const [brandData, setBrandData] = useState<BrandsProps | null>(null);
   
