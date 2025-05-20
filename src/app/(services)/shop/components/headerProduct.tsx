@@ -7,23 +7,38 @@ import { ProductCardProps } from "@/types/typeProductCard";
 import { IoCheckmark } from "react-icons/io5";
 
 import Image from "next/image";
-import { useState } from "react";
-import { CreateIcon } from "@/components/creationIcon";
+import { ReactNode, useState } from "react";
 import { IconType } from "react-icons";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
-export function ButtonAmount({icon, func, color}: {
-    icon: IconType;
+export const ButtonAmount = ({type, func}: {
+    type: 'increase' | 'decrease'
     func: any;
-    color: string;
-}) {
+}) => {
+    const icon = type === 'decrease' ? FaMinus : FaPlus;
+    const Icon = icon
+
     return(
         <button 
             className="w-6 h-6"
             onClick={func}
         >
-            <CreateIcon icon={icon} className={`$text-${color}`} />
+            <Icon className="w-6 h-6 text-black" />
         </button>
+    )
+}
+
+export const DivBlock = ({title, component}: {
+    title: string;
+    component: ReactNode;
+}) => {
+    return(
+        <div className="flex flex-col items-start gap-4">
+            <h3 className="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60">
+                {title}
+            </h3>
+            {component}
+        </div>
     )
 }
 
@@ -59,7 +74,7 @@ export default function HeaderProduct({
     }
 
     const decrAmount = () => {
-        if(amountProduct > 1) {
+        if(amountProduct > 0) {
             setAmountProduct(prev => prev - 1)
         }
     }
@@ -91,7 +106,7 @@ export default function HeaderProduct({
                         />
                     </div>
                 </article>
-                <article className={`${textItemsBlock} gap-6`}>
+                <article className={`${textItemsBlock} gap-6 justify-between h-full`}>
                     <div className={`${textItemsBlock} gap-5`}>
                         <h1 className={`font-integral uppercase font-bold text-40 leading-100 tracking-0 align-middle text-black`}>
                             {title}
@@ -111,61 +126,54 @@ export default function HeaderProduct({
                             {description}
                         </p>
                     </div>
-                    //TODO: make a one component, but change div for buttons
-                    //TODO: make a component of button, not to copy one to another
-                    <div className="flex flex-col items-start gap-4">
-                        <h3 className="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60">
-                            Select Colors
-                        </h3>
-                        <div className="flex justify-center items-center gap-4">
+                    <DivBlock 
+                        title="Select Colors"
+                        component={
+                            <div className="flex justify-center items-center gap-4">
                             {colors.map((color) => (
                                 <div className={`flex justify-center cursor-pointer items-center rounded-full w-[37px] h-[37px]`} style={{background: color.option}} key={color.id}>
                                     {color.status === true ? (<IoCheckmark className={`w-4 h-4 text-white`} />) : null }
                                 </div>
                             ))}
                         </div>
-                    </div>
-                    <div className="flex flex-col items-start gap-4">
-                        <h3 className="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60">
-                            Choose Size
-                        </h3>
-                        <div className="flex justify-between items-center gap-3">
-                            {sizes.map((size) => (
-                                <div 
-                                    className={`w-auto h-auto py-3 px-6 bg-[#f0f0f0] rounded-[62px] cursor-pointer`}
-                                    key={size.id}
-                                >
-                                    <h3 className={`font-satoshi font-normal text-16 leading-100 tracking-0 text-black/60`}>
-                                        {size.title}
-                                    </h3>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                        }
+                    />
+                    <DivBlock 
+                        title="Choose Size"
+                        component= {
+                            <div className="flex justify-between items-center gap-3">
+                                {sizes.map((size) => (
+                                    <div 
+                                        className={`w-auto h-auto py-3 px-6 bg-[#f0f0f0] rounded-[62px] cursor-pointer`}
+                                        key={size.id}
+                                    >
+                                        <h3 className={`font-satoshi font-normal text-16 leading-100 tracking-0 text-black/60`}>
+                                            {size.title}
+                                        </h3>
+                                    </div>
+                                ))}
+                            </div>
+                        }
+                    />
                     <div className="flex items-center gap-5">
-                        //TODO: change ButtonAmount to use with two difference params
-                        <div className="flex justify-between items-center w-auto h-auto  rounded-[62px] px-5 py-4 ">
+                        <div className="flex justify-between items-center w-auto bg-light-gray h-auto gap-[40px] rounded-[62px] px-5 py-4 ">
                             <ButtonAmount 
-                            //TODO: fix color changing
-                                icon={FaMinus}
+                                type="decrease"
                                 func={decrAmount}
-                                color="black"
                             />
                             <h2 className="font-satoshi font-medium text-base leading-[100%] tracking-[0%] text-black">
                                 {amountProduct}
                             </h2>
                             <ButtonAmount 
-                                icon={FaPlus}
+                                type="increase"
                                 func={incrAmount}
-                                color="black"
                             />
                         </div>
-                        <button className="rounded-custom px-[54px] py-[16px] bg-custom-black cursor-pointer" type="submit">
-                            <h2 className="font-satoshi font-medium text-16 leading-100 tracking-0 text-custom-white">
+                        <button className="flex justify-center items-center rounded-[62px] min-w-[400px] px-[54px] py-[16px] bg-black cursor-pointer" type="submit">
+                            <h2 className="font-satoshi  font-medium text-16 leading-100 text-justify tracking-0 text-white">
                                 Add to Cart
                             </h2>
                         </button>
-                        //TODO: add button & func's logic of amount of product
                     </div>
                 </article>
             </div>
