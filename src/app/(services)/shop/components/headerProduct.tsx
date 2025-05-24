@@ -2,7 +2,7 @@
 
 import { CreationGrade } from "@/components/creationGrade";
 import { CreationPrice } from "@/components/creationPrice";
-import { ProductCardProps } from "@/types/typeProductCard";
+import { HeaderCardProps, ProductCardProps } from "@/types/typeProductCard";
 
 import { IoCheckmark } from "react-icons/io5";
 
@@ -51,7 +51,7 @@ export default function HeaderProduct({
     description,
     details,
 
-}: ProductCardProps) {
+}: HeaderCardProps) {
     const [imageChoice, setImageChoice] = useState(images[0]);
     const [amountProduct, setAmountProduct] = useState<number>(0);
 

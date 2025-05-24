@@ -13,7 +13,7 @@ export type ClotheMainObjProps = {
     }
 }
 
-export type ProductCardProps = ClotheMainObjProps & {
+export type HeaderCardProps = ClotheMainObjProps & {
     images?: any[]
     description: string;
     details: {
@@ -22,6 +22,9 @@ export type ProductCardProps = ClotheMainObjProps & {
         sizes: SizeProps[];
         colors: ColorsProps[];
     };
+}
+
+export type ProductCardProps = HeaderCardProps & {
     reviews: ComSectProps[];
     faqs: {
         id: number;
