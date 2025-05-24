@@ -28,8 +28,52 @@ export const officewearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: 'S, M, L, XL',
-            colors: ['Black', 'White', 'Blue']
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Medium",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "White color",
+                    option: "#FFFFFF",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Blue color",
+                    option: "#0000FF",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {
@@ -99,8 +143,52 @@ export const officewearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: 'S, M, L, XL',
-            colors: ['Black', 'White', 'Gray']
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Meduim",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "White color",
+                    option: "#FFFFFF",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Gray color",
+                    option: "#808080",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {

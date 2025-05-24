@@ -24,8 +24,52 @@ export const winterwearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: "S, M, L, XL",
-            colors: ["Beige", "Gray", "Black"],
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Medium",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Beige color",
+                    option: "#F5F5DC",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "Gray color",
+                    option: "#808080",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {

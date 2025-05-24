@@ -23,7 +23,7 @@ export const activewearProducts: ProductCardProps[] = [
         description: 'This Nike sports t-shirt is perfect for your workout sessions. Made from moisture-wicking fabric, it keeps you cool and comfortable during intense activities.',
         details: {
             width: 500,
-            height: 700, //"S, M, L, XL"
+            height: 700,
             sizes: [
                 {
                     id: 1,

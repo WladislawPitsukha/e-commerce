@@ -24,8 +24,52 @@ export const partywearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: 'S, M, L, XL',
-            colors: ['Black', 'Red', 'Blue']
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Medium",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+                ],
+                colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "Black",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "Red color",
+                    option: "Red",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Blue color",
+                    option: "Blue",
+                    status: false,
+                }
+            ],
         },
         reviews: [
             {

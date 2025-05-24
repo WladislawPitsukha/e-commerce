@@ -24,8 +24,52 @@ export const summerwearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: "S, M, L, XL",
-            colors: ["White", "Yellow", "Green"],
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Medium",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "White color",
+                    option: "#FFFFFF",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "Yellow color",
+                    option: "#FFFF00",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Green color",
+                    option: "#008000",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {

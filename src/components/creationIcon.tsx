@@ -2,7 +2,7 @@ import { IconType } from "react-icons"
 
 export function CreateIcon ({
     icon, 
-    className = "black"
+    className = ""
 }: {
     icon: IconType,
     className?: string
