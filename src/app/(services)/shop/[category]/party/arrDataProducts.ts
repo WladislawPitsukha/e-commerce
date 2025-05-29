@@ -79,6 +79,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Sophia W.",
                     textCom: "The party dress I bought from Shop.co is stunning! The fit is perfect and the fabric feels luxurious. I've received so many compliments on it!",
                 },
+                posted: new Date("2024-07-04"),
             },
             {
                 id: 2,
@@ -87,6 +88,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Liam H.",
                     textCom: "I was skeptical about ordering a dress online, but this one exceeded my expectations. The color is vibrant and the quality is top-notch. Highly recommend!",
                 },
+                posted: new Date("2022-08-20"),
             },
             {
                 id: 3,
@@ -95,6 +97,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Olivia J.",
                     textCom: "The design of this dress is beautiful, but I found the sizing to be a bit off. I had to exchange it for a larger size, but overall I'm happy with my purchase.",
                 },
+                posted: new Date("2025-05-10")
             },
             {
                 id: 4,
@@ -103,6 +106,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Noah T.",
                     textCom: "I was really disappointed with the quality of this dress. It looked great in the pictures, but when I received it, the fabric felt cheap and the stitching was coming undone.",
                 },
+                posted: new Date("2023-02-17"),
             },
         ],
         faqs:[

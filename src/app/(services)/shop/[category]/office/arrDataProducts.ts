@@ -198,6 +198,7 @@ export const officewearProducts: ProductCardProps[] = [
                     username: "Sarah M.",
                     textCom: "The black t-shirt from Zara is a wardrobe essential! The fabric is soft and breathable, making it perfect for all-day wear. I love how versatile it is - I can dress it up for work or keep it casual for weekends.",
                 },
+                posted: new Date("2022-11-12"),
             },
             {
                 id: 2,
@@ -206,6 +207,7 @@ export const officewearProducts: ProductCardProps[] = [
                     username: "Alex K.",
                     textCom: "Just got my black t-shirt and I'm impressed! The fit is perfect and the quality is top-notch. It's become my go-to shirt for both work and casual outings.",
                 },
+                posted: new Date("2023-09-15"),
             },
             {
                 id: 3,
@@ -214,6 +216,7 @@ export const officewearProducts: ProductCardProps[] = [
                     username: "James L.",
                     textCom: "The black t-shirt is exactly what I was looking for. The material feels premium and the design is sleek. Great value for the price.",
                 },
+                posted: new Date("2024-03-08"),
             },
         ],
         faqs: [

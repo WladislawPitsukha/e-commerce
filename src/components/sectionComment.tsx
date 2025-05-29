@@ -71,7 +71,7 @@ export default function SectionComment() {
                 </div>
             </div>
             <div 
-                className="flex justify-between w-full transition-transform duration-500 ease-in-out"
+                className="flex gap-5 justify-between w-full transition-transform duration-500 ease-in-out"
             >
                 {arrComSect.slice(curIndex, curIndex + 3).map((item, index) => (
                     <CommentBlock 

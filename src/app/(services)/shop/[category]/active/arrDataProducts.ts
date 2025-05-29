@@ -79,6 +79,7 @@ export const activewearProducts: ProductCardProps[] = [
                     username: "Mike R.",
                     textCom: "Great workout shirt! The moisture-wicking fabric really works, and it's very comfortable during intense training sessions.",
                 },
+                posted: new Date("2024-07-04"),
             },
             {
                 id: 2,
@@ -87,6 +88,7 @@ export const activewearProducts: ProductCardProps[] = [
                     username: "Lisa K.",
                     textCom: "Perfect fit and excellent quality. I use it for both gym sessions and running.",
                 },
+                posted: new Date("2025-01-29")
             },
             {
                 id: 3,
@@ -95,6 +97,7 @@ export const activewearProducts: ProductCardProps[] = [
                     username: "David M.",
                     textCom: "Good quality activewear. The material is breathable and durable.",
                 },
+                posted: new Date("2023-02-17")
             },
         ],
         faqs: [

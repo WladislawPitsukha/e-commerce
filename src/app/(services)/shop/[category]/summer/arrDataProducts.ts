@@ -79,6 +79,7 @@ export const summerwearProducts: ProductCardProps[] = [
                     username: "Sarah M.",
                     textCom: "The summerwear collection at Shop.co is amazing! The fabric quality is outstanding and the designs are so trendy. I especially love their Tape Details t-shirt - it's become my go-to casual wear.",
                 },
+                posted: new Date("2021-06-03"),
             },
             {
                 id: 2,
@@ -87,6 +88,7 @@ export const summerwearProducts: ProductCardProps[] = [
                     username: "Alex K.",
                     textCom: "Just got my Sleeve Striped t-shirt and I'm impressed! The fit is perfect and the striped pattern looks even better in person. The material is breathable and perfect for summer.",
                 },
+                posted: new Date("2025-01-29"),
             },
             {
                 id: 3,
@@ -95,6 +97,7 @@ export const summerwearProducts: ProductCardProps[] = [
                     username: "James L.",
                     textCom: "The Courage Graphic t-shirt is exactly what I was looking for. The print quality is excellent and hasn't faded after multiple washes. Great value for the price.",
                 },
+                posted: new Date("2022-11-12"),
             },
             {
                 id: 4,
@@ -103,6 +106,7 @@ export const summerwearProducts: ProductCardProps[] = [
                     username: "Emily R.",
                     textCom: "Disappointed with the t-shirt I received. The size runs much smaller than advertised, and the material feels cheap. Not worth the premium price they're charging.",
                 },
+                posted: new Date("2024-07-04"),
             },
         ],
         faqs: [

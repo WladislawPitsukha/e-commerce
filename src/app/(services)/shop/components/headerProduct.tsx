@@ -91,6 +91,7 @@ export default function HeaderProduct({
                     <div className="flex flex-col justify-center items-center gap-[14px]">
                         {images.map((image, index) => (
                             <Image 
+                                key={index}
                                 src={image}
                                 className="w-[152px] h-[168px] rounded-[20px] bg-[#F0EEED] cursor-pointer"
                                 onClick={handleClick}

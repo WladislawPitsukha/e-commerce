@@ -79,6 +79,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Anna K.",
                     textCom: "The Gucci t-shirt is of great quality! The material is soft and pleasant to touch. Perfect for everyday wear.",
                 },
+                posted: new Date("2025-01-29")
             },
             {
                 id: 2,
@@ -87,6 +88,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Michael P.",
                     textCom: "I really like this t-shirt model. Classic cut and elegant look. I recommend!",
                 },
+                posted: new Date("2024-03-08"),
             },
             {
                 id: 3,
@@ -95,6 +97,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Kate W.",
                     textCom: "The Gucci t-shirt is a perfect choice! It works with many styles, and the quality is excellent.",
                 },
+                posted: new Date("2025-05-10")
             },
             {
                 id: 4,
@@ -103,6 +106,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Tom R.",
                     textCom: "Unfortunately, the t-shirt didn't meet my expectations. The material seems thin and wrinkles easily.",
                 },
+                posted: new Date("2022-11-12"),
             },
         ],
         faqs: [
