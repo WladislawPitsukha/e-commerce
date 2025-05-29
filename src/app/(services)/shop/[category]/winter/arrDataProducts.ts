@@ -79,6 +79,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Sophia L.",
                     textCom: "The wool cardigan is a must-have for winter! It's warm, stylish, and the pockets are a great addition. Highly recommend!",
                 },
+                posted: new Date("2023-09-15"),
             },
             {
                 id: 2,
@@ -87,6 +88,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Liam J.",
                     textCom: "I love this cardigan! The quality is top-notch and it keeps me warm without being too bulky. Perfect for layering.",
                 },
+                posted: new Date("2020-12-25"),
             },
             {
                 id: 3,
@@ -95,6 +97,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Olivia K.",
                     textCom: "The design is classic and versatile. I can wear it with almost anything. Just wish it came in more colors!",
                 },
+                posted: new Date("2024-03-08"),
             },
             {
                 id: 4,
@@ -103,6 +106,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Noah R.",
                     textCom: "Disappointed with the fit. It runs small and the material feels cheap. Not worth the price.",
                 },
+                posted: new Date("2022-08-20"),
             },
         ],
         faqs: [
