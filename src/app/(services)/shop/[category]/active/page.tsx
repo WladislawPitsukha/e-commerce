@@ -6,6 +6,7 @@ import HeaderProduct from "../../components/headerProduct";
 import { activewearProducts } from "./arrDataProducts";
 import FaqsProduct from "../../components/faqsProduct";
 import ReviewsProduct from "../../components/reviewsProduct";
+import DetailsProduct from "../../components/detailsProduct";
 
 export default function HomePage() {
     const arrayProduct1 = activewearProducts[0]
@@ -28,7 +29,6 @@ export default function HomePage() {
             key={id}
         >
             <HeaderProduct
-                //TODO?: change arrays
                 id={id}
                 images={images}
                 title={title}
@@ -37,7 +37,7 @@ export default function HomePage() {
                 price={price}
                 details={details}
             />
-            <section className="flex flex-col items-center w-full">
+            <section className="flex flex-col items-center w-full px-[100px]">
                 //TODO: make tabs for this components
                 <div className="flex justify-evenly items-center w-full">
                     {["Product Details", "Rating & Reviews", "FAQs"].map((title, index) => (
@@ -46,11 +46,10 @@ export default function HomePage() {
                         </h2>
                     ))}
                 </div>
-                <Details />
+                <DetailsProduct />
                 <ReviewsProduct array={reviews} />
                 <FaqsProduct />
             </section>
-            //TODO: make and add the components for this page
         </div>
     );
 }
