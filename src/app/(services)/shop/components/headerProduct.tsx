@@ -28,13 +28,20 @@ export const ButtonAmount = ({type, func}: {
     )
 }
 
-export const DivBlock = ({title, component}: {
+export interface DivBlockProps {
     title: string;
     component: ReactNode;
-}) => {
+    className?: string;
+    classNameTitle?: string;
+    gap?: number;
+}
+
+export const DivBlock = ({title, component, className = "", classNameTitle = ""}: 
+    DivBlockProps
+) => {
     return(
-        <div className="flex flex-col items-start gap-4">
-            <h3 className="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60">
+        <div className={`${className}`}>
+            <h3 className={`${classNameTitle}`}>
                 {title}
             </h3>
             {component}
@@ -129,6 +136,8 @@ export default function HeaderProduct({
                     </div>
                     <DivBlock 
                         title="Select Colors"
+                        className="flex flex-col items-start gap-4"
+                        classNameTitle="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60"
                         component={
                             <div className="flex justify-center items-center gap-4">
                             {colors.map((color) => (
@@ -141,6 +150,8 @@ export default function HeaderProduct({
                     />
                     <DivBlock 
                         title="Choose Size"
+                        className="flex flex-col items-start gap-4"
+                        classNameTitle="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60"
                         component= {
                             <div className="flex justify-between items-center gap-3">
                                 {sizes.map((size) => (
