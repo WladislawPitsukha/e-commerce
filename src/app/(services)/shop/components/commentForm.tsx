@@ -5,6 +5,7 @@ interface CommentFormProps {
         username: string;
         textCom: string;
         grade: number;
+        posted: string;
     }) => void
 }
 
@@ -13,15 +14,15 @@ export const CommentForm = ({ onSubmit }: CommentFormProps) => {
         username: "",
         textCom: "",
         grade: 5,
+        posted: new Date().toISOString().split("T")[0]
     });
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         onSubmit(comment);
         setComment({
-            username: "",
-            textCom: "", 
-            grade: 5
+            ...comment,
+            posted: new Date().toISOString().split("T")[0]
         });
     }
 
@@ -32,27 +33,36 @@ export const CommentForm = ({ onSubmit }: CommentFormProps) => {
                 value={comment.username}
                 onChange={(e) => setComment({ ...comment, username: e.target.value })}
                 placeholder="Your name"
-                className="p-2 border rounded-md"
+                className="p-2 border rounded-md text-black"
                 required
             />
             <textarea
                 value={comment.textCom}
                 onChange={(e) => setComment({ ...comment, textCom: e.target.value })}
                 placeholder="Your review"
-                className="p-2 border rounded-md h-32"
+                className="p-2 border rounded-md h-32 text-black"
                 required
             />
             <div className="flex items-center gap-2">
-                <label>Rating:</label>
+                <label className="text-black">Rating:</label>
                 <select
                     value={comment.grade}
                     onChange={(e) => setComment({ ...comment, grade: Number(e.target.value) })}
-                    className="p-2 border rounded-md"
+                    className="p-2 border rounded-md text-black"
                 >
                     {[1, 2, 3, 4, 5].map((num) => (
-                        <option key={num} value={num}>{num}</option>
+                        <option className="text-black" key={num} value={num}>{num}</option>
                     ))}
                 </select>
+            </div>
+            <div className="flex items-center gap-2">
+                <label className="text-black">Posted:</label>
+                <input
+                    type="date"
+                    value={comment.posted}
+                    onChange={(e) => setComment({ ...comment, posted: e.target.value })}
+                    className="p-2 border rounded-md text-black"
+                />
             </div>
             <button 
                 type="submit"

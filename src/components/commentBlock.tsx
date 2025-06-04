@@ -13,7 +13,7 @@ export default function CommentBlock({
     posted
 }: ComSectProps) {
     const Icon = FaCircleCheck;
-    const date = posted;
+    const date = posted
     
     const typeOfMonth = (month: number): string => {
         switch (month) {
