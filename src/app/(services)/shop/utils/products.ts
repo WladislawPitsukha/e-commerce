@@ -6,9 +6,6 @@ import { summerwearProducts } from "../[category]/summer/arrDataProducts";
 import { winterwearProducts } from "../[category]/winter/arrDataProducts";
 import { activewearProducts } from "../[category]/active/arrDataProducts";
 
-//TODO: finish this file to display the products of the selected category
-
-
 export const allProducts: ProductCardProps[] = [
     ...activewearProducts,
     ...casualwearProducts,

@@ -13,6 +13,15 @@ const config: Config = {
         'inter': ['Inter', 'sans-serif'],
         'satoshi': ['Satoshi', 'sans-serif'],
       },
+      fontSize: {
+        '40': '40px',
+      },
+      lineHeight: {
+        '100': '100%',
+      },
+      letterSpacing: {
+        '0': '0%',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

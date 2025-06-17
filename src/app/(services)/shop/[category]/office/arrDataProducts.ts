@@ -8,11 +8,14 @@ import OfficewearZara1_3 from "@/assets/img/category/office/officewearZara1_3.jp
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
+//TODO: add much more clothe's objs for building & testing
+
 export const officewearProducts: ProductCardProps[] = [
     {
         id: 1,
         img: OfficewearCalvin1_1,
         title: 'Black Shirt Calvin Klein',
+        grade: 4.5,
         price: {
             mainPrice: 89.99,
             option: true,
@@ -27,8 +30,52 @@ export const officewearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: 'S, M, L, XL',
-            colors: ['Black', 'White', 'Blue']
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Medium",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "White color",
+                    option: "#FFFFFF",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Blue color",
+                    option: "#0000FF",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {
@@ -83,6 +130,7 @@ export const officewearProducts: ProductCardProps[] = [
         id: 2,
         img: OfficewearZara1_1,
         title: 'Black T-shirt Zara',
+        grade: 2,
         price: {
             mainPrice: 39.99,
             option: false,
@@ -97,8 +145,52 @@ export const officewearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: 'S, M, L, XL',
-            colors: ['Black', 'White', 'Gray']
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Meduim",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "White color",
+                    option: "#FFFFFF",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Gray color",
+                    option: "#808080",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {
@@ -108,6 +200,7 @@ export const officewearProducts: ProductCardProps[] = [
                     username: "Sarah M.",
                     textCom: "The black t-shirt from Zara is a wardrobe essential! The fabric is soft and breathable, making it perfect for all-day wear. I love how versatile it is - I can dress it up for work or keep it casual for weekends.",
                 },
+                posted: new Date("2022-11-12"),
             },
             {
                 id: 2,
@@ -116,6 +209,7 @@ export const officewearProducts: ProductCardProps[] = [
                     username: "Alex K.",
                     textCom: "Just got my black t-shirt and I'm impressed! The fit is perfect and the quality is top-notch. It's become my go-to shirt for both work and casual outings.",
                 },
+                posted: new Date("2023-09-15"),
             },
             {
                 id: 3,
@@ -124,6 +218,7 @@ export const officewearProducts: ProductCardProps[] = [
                     username: "James L.",
                     textCom: "The black t-shirt is exactly what I was looking for. The material feels premium and the design is sleek. Great value for the price.",
                 },
+                posted: new Date("2024-03-08"),
             },
         ],
         faqs: [

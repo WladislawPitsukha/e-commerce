@@ -4,11 +4,14 @@ import CasualstyleGucci1_3 from "@/assets/img/category/casual/CasualstyleGucci1_
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
+//TODO: add much more clothe's objs for building & testing
+
 export const casualwearProducts: ProductCardProps[] = [
     {
         id: 1,
         img: CasualstyleGucci1_1,
         title: "Gucci T-shirt L Cotton Black",
+        grade: 4.5,
         price: {
             mainPrice: 2999,
             option: true,
@@ -23,8 +26,52 @@ export const casualwearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: "S, M, L, XL",
-            colors: ["Black", "White", "Gray"],
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Meduim",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "White color",
+                    option: "#FFFFFF",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Gray color",
+                    option: "#808080",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {
@@ -34,6 +81,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Anna K.",
                     textCom: "The Gucci t-shirt is of great quality! The material is soft and pleasant to touch. Perfect for everyday wear.",
                 },
+                posted: new Date("2025-01-29")
             },
             {
                 id: 2,
@@ -42,6 +90,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Michael P.",
                     textCom: "I really like this t-shirt model. Classic cut and elegant look. I recommend!",
                 },
+                posted: new Date("2024-03-08"),
             },
             {
                 id: 3,
@@ -50,6 +99,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Kate W.",
                     textCom: "The Gucci t-shirt is a perfect choice! It works with many styles, and the quality is excellent.",
                 },
+                posted: new Date("2025-05-10")
             },
             {
                 id: 4,
@@ -58,6 +108,7 @@ export const casualwearProducts: ProductCardProps[] = [
                     username: "Tom R.",
                     textCom: "Unfortunately, the t-shirt didn't meet my expectations. The material seems thin and wrinkles easily.",
                 },
+                posted: new Date("2022-11-12"),
             },
         ],
         faqs: [

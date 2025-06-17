@@ -2,10 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import AnimatedTitle from "./animatedTitle";
-import { BasicInfoProps } from "../../types/typeBrands";
 import { ProductProps } from "../../types/typeProductProps";
-
-//TODO: add params for the component
 
 interface HeaderProps {
     id: number;

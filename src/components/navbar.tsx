@@ -2,17 +2,13 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import { IconType } from "react-icons";
+import Form from "next/form";
+
 import { arrTitleLinks } from "@/constants/navBar/arrTitleLinks";
 import { arrIconNavlinks } from "@/constants/navBar/arrIconNavLinks";
-import Form from "next/form";
+
 import { IoSearch } from "react-icons/io5";
-
-export function CreateIcon({icon}: {icon: IconType}):JSX.Element {
-    const Icon = icon;
-
-    return <Icon className="w-6 h-6 text-black" />
-}
+import { CreateIcon } from "./creationIcon";
 
 export default function NavBar() {
     const [searchTerm, setSearchTerm] = useState('');

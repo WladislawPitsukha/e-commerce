@@ -4,11 +4,14 @@ import PartystyleCalvinklein1_3 from "@/assets/img/category/party/partywearCalvi
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
+//TODO: add much more clothe's objs for building & testing
+
 export const partywearProducts: ProductCardProps[] = [
     {
         id: 1,
         img: PartystyleCalvinklein1_1,
         title: 'Party Dress',
+        grade: 2,
         price: {
             mainPrice: 79.99,
             option: true,
@@ -23,8 +26,52 @@ export const partywearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: 'S, M, L, XL',
-            colors: ['Black', 'Red', 'Blue']
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Medium",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+                ],
+                colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "Black",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "Red color",
+                    option: "Red",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Blue color",
+                    option: "Blue",
+                    status: false,
+                }
+            ],
         },
         reviews: [
             {
@@ -34,6 +81,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Sophia W.",
                     textCom: "The party dress I bought from Shop.co is stunning! The fit is perfect and the fabric feels luxurious. I've received so many compliments on it!",
                 },
+                posted: new Date("2024-07-04"),
             },
             {
                 id: 2,
@@ -42,6 +90,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Liam H.",
                     textCom: "I was skeptical about ordering a dress online, but this one exceeded my expectations. The color is vibrant and the quality is top-notch. Highly recommend!",
                 },
+                posted: new Date("2022-08-20"),
             },
             {
                 id: 3,
@@ -50,6 +99,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Olivia J.",
                     textCom: "The design of this dress is beautiful, but I found the sizing to be a bit off. I had to exchange it for a larger size, but overall I'm happy with my purchase.",
                 },
+                posted: new Date("2025-05-10")
             },
             {
                 id: 4,
@@ -58,6 +108,7 @@ export const partywearProducts: ProductCardProps[] = [
                     username: "Noah T.",
                     textCom: "I was really disappointed with the quality of this dress. It looked great in the pictures, but when I received it, the fabric felt cheap and the stitching was coming undone.",
                 },
+                posted: new Date("2023-02-17"),
             },
         ],
         faqs:[

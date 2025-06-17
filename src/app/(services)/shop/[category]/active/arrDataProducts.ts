@@ -4,11 +4,14 @@ import ActivewearNike1_3 from "@/assets/img/category/active/activewearZara1_3.jp
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
+//TODO: add much more clothe's objs for building & testing
+
 export const activewearProducts: ProductCardProps[] = [
     {
         id: 1,
         img: ActivewearNike1_1,
         title: "Nike Sports T-shirt",
+        grade: 4.5,
         price: {
             mainPrice: 59.99,
             option: true,
@@ -23,8 +26,52 @@ export const activewearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: "S, M, L, XL",
-            colors: ["Black", "White", "Gray"],
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Meduim",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "Green color",
+                    option: "#006400",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Red color",
+                    option: "#8B0000",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {
@@ -34,6 +81,7 @@ export const activewearProducts: ProductCardProps[] = [
                     username: "Mike R.",
                     textCom: "Great workout shirt! The moisture-wicking fabric really works, and it's very comfortable during intense training sessions.",
                 },
+                posted: new Date("2024-07-04"),
             },
             {
                 id: 2,
@@ -42,6 +90,7 @@ export const activewearProducts: ProductCardProps[] = [
                     username: "Lisa K.",
                     textCom: "Perfect fit and excellent quality. I use it for both gym sessions and running.",
                 },
+                posted: new Date("2025-01-29")
             },
             {
                 id: 3,
@@ -50,6 +99,7 @@ export const activewearProducts: ProductCardProps[] = [
                     username: "David M.",
                     textCom: "Good quality activewear. The material is breathable and durable.",
                 },
+                posted: new Date("2023-02-17")
             },
         ],
         faqs: [

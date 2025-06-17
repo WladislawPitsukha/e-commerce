@@ -1,6 +1,7 @@
 import { ComSectProps } from "@/types/typeComSect";
 import '../app/globals.css'
-import { FaCircleCheck, FaStar } from "react-icons/fa6";
+import { FaCircleCheck } from "react-icons/fa6";
+import { CreationGrade } from "./creationGrade";
 
 export default function CommentBlock({
     id,
@@ -9,43 +10,62 @@ export default function CommentBlock({
         username,
         textCom,
     },
+    posted
 }: ComSectProps) {
     const Icon = FaCircleCheck;
+    const date = posted
+    
+    const typeOfMonth = (month: number): string => {
+        switch (month) {
+            case 0:
+                return "January";
+            case 1:
+                return "February";
+            case 2:
+                return "March";
+            case 3:
+                return "April";
+            case 4:
+                return "May";
+            case 5:
+                return "June";
+            case 6:
+                return "July";
+            case 7:
+                return "August";
+            case 8:
+                return "September";
+            case 9:
+                return "October";
+            case 10:
+                return "November";
+            case 11:
+                return "December";
+            default:
+                throw new Error("Invalid month number. Please provide a number between 1 and 12.");
+        }
+    }
+
+    const monthName = typeOfMonth(date?.getMonth() ?? 0);
+    const dateOfPosted = `${monthName} ${date?.getDay()}, ${date?.getFullYear()}`
+    const timeDif = (pastDate: Date): number => {
+        const today = new Date();
+
+        today.setHours(0, 0, 0, 0);
+        pastDate.setHours(0, 0, 0, 0);
+
+        const msInOneDay = 1000 * 60 * 60 * 24;
+        const diffInMs = today.getTime() - pastDate.getTime()
+
+        return Math.floor(diffInMs / msInOneDay);
+    }
+    
     return(
         <article 
-            className="flex flex-col items-start h-60 w-[400px] rounded-[20px] border border-gray-500 gap-[15px] px-8 py-7"
+            className="flex flex-col items-start h-60 min-w-[400px] w-full rounded-[20px] border border-gray-500 gap-[15px] px-8 py-7"
             key={id}
         >
-            <div className="flex items-end gap-2">
-                <div className="flex gap-[7px]">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                        <FaStar
-                            key={star}
-                            className={`w-[22px] h-[22px] ${
-                                star <= Math.floor(grade)
-                                ? 'text-yellow-400'
-                                : star === Math.round(grade)
-                                ? null
-                                : 'text-gray-300'
-                            }`}
-                            style={
-                                star === Math.round(grade)
-                                ? {
-                                    background: `linear-gradient(90deg, #FACC15 ${
-                                        (grade % 1) * 100
-                                    }%, #D1D5DB ${(grade % 1) * 100}%)`,
-                                    WebkitBackgroundClip: 'text',
-                                    WebkitTextFillColor: 'transparent',
-                                }
-                                : undefined
-                            }
-                        />
-                    ))}
-                </div>
-                <h5 className="font-satoshi text-xs font-bold leading-[22px] tracking-[0%] text-yellow-800 m-0">
-                    {grade}
-                </h5>
-            </div>
+            <CreationGrade grade={grade} className="yellow-800" />
             <div className="flex flex-col items-start gap-3 w-auto">
                 <div className="flex items-center gap-1 h-auto">
                     <h3 className="font-satoshi text-xl font-bold leading-[22px] tracking-[0%] text-black">
@@ -57,6 +77,17 @@ export default function CommentBlock({
                     {textCom}
                 </p>
             </div>
+            {date ? (
+                <div className="flex justify-between w-full">
+                    <h5 className="font-satoshi text-base font-normal leading-[22px] tracking-[0%] text-black/30">
+                        posted {timeDif(date)} days ago
+                    </h5>
+                    <h4 className="font-satoshi font-medium text-base leading-[22px] tracking-[0%] text-black">
+                        {date ? `Posted on ${dateOfPosted}` : 'Date not available'}
+                    </h4>
+                </div>) : (
+                    undefined
+                )}
         </article>
     )
 }

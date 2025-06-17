@@ -8,6 +8,8 @@ export const arrJeansObjs: ClotheMainObjProps[] = [
         id: 1,
         img: Jeans1,
         title: "Skinny Fit Jeans",
+        grade: 3.2,
+        images: [],
         price: {
             mainPrice: 260,
             option: true,
@@ -18,6 +20,8 @@ export const arrJeansObjs: ClotheMainObjProps[] = [
         id: 2,
         img: Jeans2,
         title: "Faded Skinny Jeans",
+        grade: 4.5,
+        images: [],
         price: {
             mainPrice: 210,
             option: false,

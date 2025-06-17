@@ -6,8 +6,6 @@ import { arrBrands } from "../../constants/arrBrands";
 import { arrCountryZara } from "../constants/arrCountryZara";
 import { CountryDataProps } from "../../types/typeCountryData";
 
-//TODO: add params for the components
-
 export function BlockArtComprasion({
     id, 
     name,

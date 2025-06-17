@@ -4,11 +4,14 @@ import WinterwearGucci1_3 from "@/assets/img/category/winter/winterwearGucci1_3.
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
+//TODO: add much more clothe's objs for building & testing
+
 export const winterwearProducts: ProductCardProps[] = [
     {
         id: 1,
         img: WinterwearGucci1_1,
         title: "Wool cardigan with pockets",
+        grade: 4.5,
         price: {
             mainPrice: 89.99,
             option: true,
@@ -23,8 +26,52 @@ export const winterwearProducts: ProductCardProps[] = [
         details: {
             width: 500,
             height: 700,
-            size: "S, M, L, XL",
-            colors: ["Beige", "Gray", "Black"],
+            sizes: [
+                {
+                    id: 1,
+                    n_size: "S",
+                    title: "Small",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    n_size: "M",
+                    title: "Medium",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    n_size: "L",
+                    title: "Large",
+                    status: false,
+                },
+                {
+                    id: 4,
+                    n_size: "XL",
+                    title: "X-Large",
+                    status: false,
+                },
+            ],
+            colors: [
+                {
+                    id: 1,
+                    title: "Beige color",
+                    option: "#F5F5DC",
+                    status: false,
+                },
+                {
+                    id: 2,
+                    title: "Gray color",
+                    option: "#808080",
+                    status: false,
+                },
+                {
+                    id: 3,
+                    title: "Black color",
+                    option: "#000000",
+                    status: false,
+                },
+            ],
         },
         reviews: [
             {
@@ -34,6 +81,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Sophia L.",
                     textCom: "The wool cardigan is a must-have for winter! It's warm, stylish, and the pockets are a great addition. Highly recommend!",
                 },
+                posted: new Date("2023-09-15"),
             },
             {
                 id: 2,
@@ -42,6 +90,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Liam J.",
                     textCom: "I love this cardigan! The quality is top-notch and it keeps me warm without being too bulky. Perfect for layering.",
                 },
+                posted: new Date("2020-12-25"),
             },
             {
                 id: 3,
@@ -50,6 +99,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Olivia K.",
                     textCom: "The design is classic and versatile. I can wear it with almost anything. Just wish it came in more colors!",
                 },
+                posted: new Date("2024-03-08"),
             },
             {
                 id: 4,
@@ -58,6 +108,7 @@ export const winterwearProducts: ProductCardProps[] = [
                     username: "Noah R.",
                     textCom: "Disappointed with the fit. It runs small and the material feels cheap. Not worth the price.",
                 },
+                posted: new Date("2022-08-20"),
             },
         ],
         faqs: [
