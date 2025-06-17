@@ -4,6 +4,8 @@ import ActivewearNike1_3 from "@/assets/img/category/active/activewearZara1_3.jp
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
+//TODO: add much more clothe's objs for building & testing
+
 export const activewearProducts: ProductCardProps[] = [
     {
         id: 1,

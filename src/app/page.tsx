@@ -26,19 +26,21 @@ export default function MainPage() {
             <Header />
             {[
                 {
+                    id: 1,
                     title: "New Arrays",
                     array: newArrivals.randomCards,
                     link: "",
                 },
                 {
+                    id: 2,
                     title: 'Top selling',
                     array: topSelling.randomCards,
                     link: "",
                 }
-            ].map((item, index) =>(
+            ].map((article) =>(
                 <SectionCards 
-                    key={index}
-                    {...item}
+                    key={article.id}
+                    {...article}
                 />
             ))}
             <SectionStyle 

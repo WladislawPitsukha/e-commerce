@@ -8,6 +8,8 @@ import OfficewearZara1_3 from "@/assets/img/category/office/officewearZara1_3.jp
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
+//TODO: add much more clothe's objs for building & testing
+
 export const officewearProducts: ProductCardProps[] = [
     {
         id: 1,
