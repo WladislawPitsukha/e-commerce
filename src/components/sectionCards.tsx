@@ -1,10 +1,9 @@
-import { ClotheObjProps } from "@/types/typeClotheCard";
-
+import { ClotheMainObjProps } from "@/types/typeProductCard";
 import ClothesCard from "./clothesCard";
 
 interface SectionCardsProps {
     title: string;
-    array: ClotheObjProps[];
+    array: ClotheMainObjProps[];
     link: string;
 }
 export default function SectionCards({

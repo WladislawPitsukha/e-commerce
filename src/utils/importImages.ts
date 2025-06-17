@@ -1,4 +1,5 @@
-import { ClotheObjProps } from "@/types/typeClotheCard";
+import { ClotheMainObjProps } from "@/types/typeProductCard";
+
 
 export function importImages(category: string, id: number):any[] {
     const images: any[] = [];
@@ -11,7 +12,7 @@ export function importImages(category: string, id: number):any[] {
     return images;
 }
 
-export function createClotheCards(category: string, objs: ClotheObjProps[]): ClotheObjProps[] {
+export function createClotheCards(category: string, objs: ClotheMainObjProps[]): ClotheMainObjProps[] {
     const images = importImages(category, objs.length);
 
     return objs.map((items, index) => ({
