@@ -17,7 +17,11 @@ import TextLinkPage from './components/textLinkPage';
 
 import { useEffect, useState } from 'react';
 import AccFuncBlock from './components/accFuncBlock';
-//TODO: finish this component to display the products of the selected category
+import { arrDressStyle } from '@/constants/arrDressStyle';
+import Link from 'next/link';
+import PriceFilter from './components/priceFilter';
+import SizeFilter from './components/sizeFilter';
+import ColorsFilter from './components/colorFilter';
 
 export default function Home() {
     const allProducts = [
@@ -83,32 +87,39 @@ export default function Home() {
                         <AccFuncBlock 
                             nameSection='Price'
                             reactComponent={
-                                <div>
-                                    //TODO: add the useful component
-                                </div>
+                                <PriceFilter />
                             }
                         />
                         <AccFuncBlock 
                             nameSection='Colors'
                             reactComponent={
-                                <div>
-                                    //TODO: add the useful component
-                                </div>
+                                <ColorsFilter />
                             }
                         />
                         <AccFuncBlock 
                             nameSection='Size'
                             reactComponent={
-                                <div>
-                                    //TODO: add the useful component
-                                </div>
+                                <SizeFilter />
                             }
                         />
                         <AccFuncBlock 
                             nameSection='Dress style'
                             reactComponent={
-                                <div>
-                                    //TODO: add the useful component
+                                <div className="flex flex-col items-start gap-4">
+                                    {arrDressStyle.map((style) => (
+                                        <Link
+                                            key={style.id}
+                                            href={`/shop/${style.link}`}
+                                            className="flex items-center justify-between w-full hover:bg-gray-100 px-4 py-2 rounded-lg transition-colors"
+                                        >
+                                            <span className="font-satoshi text-base text-black/60">
+                                                {style.title}
+                                            </span>
+                                            <span className="text-black/40">
+                                                {'>'}
+                                            </span>
+                                        </Link>
+                                    ))}
                                 </div>
                             }
                         />
