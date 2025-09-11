@@ -4,8 +4,6 @@ import PartystyleCalvinklein1_3 from "@/assets/img/category/party/partywearCalvi
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
-//TODO: add much more clothe's objs for building & testing
-
 export const partywearProducts: ProductCardProps[] = [
     {
         id: 1,

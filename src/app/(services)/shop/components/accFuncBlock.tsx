@@ -12,8 +12,8 @@ export default function AccFuncBlock({
     reactComponent,
 }: AccFuncBlockProps) {
     return(
-        <div>
-            <Accordion>
+        <div className="w-full">
+            <Accordion className=" bg-[#F0EEED]">
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1-content"

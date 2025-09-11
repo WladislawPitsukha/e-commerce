@@ -4,8 +4,6 @@ import SummerwearZara1_3 from "@/assets/img/category/summer/summerwearZara1_3.jp
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
-//TODO: add much more clothe's objs for building & testing
-
 export const summerwearProducts: ProductCardProps[] = [
     {
         id: 1,

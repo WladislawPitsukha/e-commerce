@@ -4,8 +4,6 @@ import WinterwearGucci1_3 from "@/assets/img/category/winter/winterwearGucci1_3.
 
 import { ProductCardProps } from "@/types/typeProductCard";
 
-//TODO: add much more clothe's objs for building & testing
-
 export const winterwearProducts: ProductCardProps[] = [
     {
         id: 1,
