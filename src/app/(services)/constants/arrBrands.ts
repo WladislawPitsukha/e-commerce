@@ -1,32 +1,32 @@
-import { arrCountryCalvin } from "../calvinklein/constants/arrCountryCalvin";
-import { arrGrowthCalvin } from "../calvinklein/constants/arrGrowthCalvin";
-import { arrPartnersCalvin } from "../calvinklein/constants/arrPartnersCalvin";
-import { arrProductsCalvin } from "../calvinklein/constants/arrProductsCalvin";
-import { arrSalesCalvin } from "../calvinklein/constants/arrSalesCalvin";
+import { arrCountryCalvin } from "../[brands]/calvinklein/arrCountryCalvin";
+import { arrGrowthCalvin } from "../[brands]/calvinklein/arrGrowthCalvin";
+import { arrPartnersCalvin } from "../[brands]/calvinklein/arrPartnersCalvin";
+import { arrProductsCalvin } from "../[brands]/calvinklein/arrProductsCalvin";
+import { arrSalesCalvin } from "../[brands]/calvinklein/arrSalesCalvin";
 
-import { arrCountryGucci } from "../gucci/constants/arrCountryGucci";
-import { arrGrowthGucci } from "../gucci/constants/arrGrowthGucci";
-import { arrPartnersGucci } from "../gucci/constants/arrPartnersGucci";
-import { arrProductsGucci } from "../gucci/constants/arrProductsGucci";
-import { arrSalesGucci } from "../gucci/constants/arrSalesGucci";
+import { arrCountryGucci } from "../[brands]/gucci/arrCountryGucci";
+import { arrGrowthGucci } from "../[brands]/gucci/arrGrowthGucci";
+import { arrPartnersGucci } from "../[brands]/gucci/arrPartnersGucci";
+import { arrProductsGucci } from "../[brands]/gucci/arrProductsGucci";
+import { arrSalesGucci } from "../[brands]/gucci/arrSalesGucci";
 
-import { arrCountryPrada } from "../prada/constants/arrCountryPrada";
-import { arrGrowthPrada } from "../prada/constants/arrGrowthPrada";
-import { arrPartnersPrada } from "../prada/constants/arrPartnersPrada";
-import { arrSalesPrada } from "../prada/constants/arrSalesPrada";
-import { arrProductPrada } from "../prada/constants/arrProductsPrada";
+import { arrCountryPrada } from "../[brands]/prada/arrCountryPrada";
+import { arrGrowthPrada } from "../[brands]/prada/arrGrowthPrada";
+import { arrPartnersPrada } from "../[brands]/prada/arrPartnersPrada";
+import { arrSalesPrada } from "../[brands]/prada/arrSalesPrada";
+import { arrProductPrada } from "../[brands]/prada/arrProductsPrada";
 
-import { arrCountryVersace } from "../versage/constants/arrCountryVersace";
-import { arrGrowthVersace } from "../versage/constants/arrGrowthVersace";
-import { arrPartnersVersace } from "../versage/constants/arrPartnersVersace";
-import { arrProductVersace } from "../versage/constants/arrProductVersace";
-import { arrSalesVersace } from "../versage/constants/arrSalesVersace";
+import { arrCountryVersace } from "../[brands]/versage/arrCountryVersace";
+import { arrGrowthVersace } from "../[brands]/versage/arrGrowthVersace";
+import { arrPartnersVersace } from "../[brands]/versage/arrPartnersVersace";
+import { arrProductVersace } from "../[brands]/versage/arrProductVersace";
+import { arrSalesVersace } from "../[brands]/versage/arrSalesVersace";
 
-import { arrCountryZara } from "../zara/constants/arrCountryZara";
-import { arrGrowthZara } from "../zara/constants/arrGrowthZara";
-import { arrPartnersZara } from "../zara/constants/arrPartnersZara";
-import { arrProductZara } from "../zara/constants/arrProductsZara";
-import { arrSalesZara } from "../zara/constants/arrSalesZara";
+import { arrCountryZara } from "../[brands]/zara/arrCountryZara";
+import { arrGrowthZara } from "../[brands]/zara/arrGrowthZara";
+import { arrPartnersZara } from "../[brands]/zara/arrPartnersZara";
+import { arrProductZara } from "../[brands]/zara/arrProductsZara";
+import { arrSalesZara } from "../[brands]/zara/arrSalesZara";
 
 import { BrandsProps } from "../types/typeBrands";
 

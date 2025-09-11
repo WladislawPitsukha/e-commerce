@@ -1,8 +1,7 @@
 "use client"
 
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { arrSalesZara } from '../../constants/arrSalesZara';
-import { SalesDataProps } from '../../../types/typeSalesProps';
+import { SalesDataProps } from '../../../../types/typeSalesProps';
 
 export default function BarChartD({ arrSales }: { arrSales: SalesDataProps[]}) {
     return(

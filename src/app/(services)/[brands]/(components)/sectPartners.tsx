@@ -1,5 +1,5 @@
 
-import { TextlinkProps } from "../../types/typeTextLink"
+import { TextlinkProps } from "../../../types/typeTextLink"
 import Link from "next/link"
 
 export function BlockPartner({

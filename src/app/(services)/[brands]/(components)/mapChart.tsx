@@ -4,7 +4,7 @@ import "../globals.css"
 import { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { CountryDataProps } from "../../types/typeCountryData";
+import { CountryDataProps } from "../../../types/typeCountryData";
 
 interface MapChartProps {
     hoveredCountry: string | null;

@@ -2,11 +2,11 @@
 
 //TODO: fix this function to get the category from the url and display the products of that category
 //TODO: finish this component to display the products of the selected category
-import HeaderProduct from "../../components/headerProduct";
-import { activewearProducts } from "./arrDataProducts";
-import FaqsProduct from "../../components/faqsProduct";
-import ReviewsProduct from "../../components/reviewsProduct";
-import DetailsProduct from "../../components/detailsProduct";
+//import HeaderProduct from "../../components/headerProduct";
+//import { activewearProducts } from "./arrDataProducts";
+//import FaqsProduct from "../../components/faqsProduct";
+//import ReviewsProduct from "../../components/reviewsProduct";
+//import DetailsProduct from "../../components/detailsProduct";
 
 import {Box, Tab, Tabs} from "@mui/material";
 import { useState } from "react";
