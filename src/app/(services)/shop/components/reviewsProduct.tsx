@@ -1,9 +1,9 @@
 "use client"
 
-import CommentBlock from "@/components/commentBlock"
+import CommentBlock from "@/components/mainPage/commentBlock"
 import { ComSectProps } from "@/types/typeComSect"
 import { PopoverSetBut } from "./popoverSetBut"
-import { CreateIcon } from "@/components/creationIcon"
+import { CreateIcon } from "@/components/mainPage/creationIcon"
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react"
 import { CommentForm } from "./commentForm"

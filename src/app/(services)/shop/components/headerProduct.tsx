@@ -1,7 +1,7 @@
 "use client";
 
-import { CreationGrade } from "@/components/creationGrade";
-import { CreationPrice } from "@/components/creationPrice";
+import { CreationGrade } from "@/components/mainPage/creationGrade";
+import { CreationPrice } from "@/components/mainPage/creationPrice";
 import { HeaderCardProps, ProductCardProps } from "@/types/typeProductCard";
 
 import { IoCheckmark } from "react-icons/io5";
@@ -20,6 +20,7 @@ export const ButtonAmount = ({type, func}: {
 
     return(
         <button 
+            title="button"
             className="w-6 h-6"
             onClick={func}
         >

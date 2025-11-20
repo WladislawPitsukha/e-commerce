@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import Popover from '@mui/material/Popover';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
-import { CreateIcon } from '@/components/creationIcon';
+import { CreateIcon } from '@/components/mainPage/creationIcon';
 
 import { MdTune } from "react-icons/md";
 

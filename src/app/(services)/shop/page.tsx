@@ -11,7 +11,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import TuneIcon from '@mui/icons-material/Tune';
 
 import { linksPageFilter } from './constants/linksPagesFilter'
-import ClothesCard from '@/components/clothesCard';;
+import ClothesCard from '@/components/mainPage/clothesCard';;
 import { ClotheMainObjProps } from '@/types/typeProductCard';
 import TextLinkPage from './components/textLinkPage';
 
