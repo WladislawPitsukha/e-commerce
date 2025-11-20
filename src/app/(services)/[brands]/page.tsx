@@ -1,29 +1,40 @@
 "use client"
 
-import HeaderZara from "./zara/components/headZara";
-import SectPartners from "./zara/components/sectPartners";
-import SectBusiness from "./zara/components/sectBusiness";
-import SectComprasion from "./zara/components/sectComprasion";
-
-import { BrandsProps } from "../types/typeBrands";
 import { useEffect, useState } from "react";
-import { arrBrands } from "../constants/arrBrands";
+import { useParams } from "next/navigation";
+
+import { arrBrands } from "../../../constants/brands/arrBrands";
+import { BrandsProps } from "../types/typeBrands";
+
+import HeaderSect from "@/components/brandsPage/headSect";
+import SectBusiness from "@/components/brandsPage/sectBusiness";
+import SectPartners from "@/components/brandsPage/sectPartners";
+import SectComprasion from "@/components/brandsPage/sectComprasion";
 
 export default function Home() {
   const [brandData, setBrandData] = useState<BrandsProps | null>(null);
+
+  const params = useParams();
+  const brandSlug = params.brands as string;
   
   useEffect(() => {
-    const zaraData = arrBrands.find((brand) => {
-      return brand.brand.name === "Zara"
-    })
+    const brandName = brandSlug
+      .split(/(?=[A-Z])/)
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
 
-    if(zaraData) {
-      setBrandData(zaraData);
-    }
-  }, []);
+      const foundBrand = arrBrands.find((brand) => {
+        brand.brand.name.toLowerCase() === brandName.toLowerCase();
+      });
+
+      if(foundBrand) {
+        setBrandData(foundBrand);
+      }
+
+  }, [brandSlug]);
 
   if(!brandData) {
-    return <div>Loading...</div>
+    return <div>Loading...</div>;
   }
 
   const {
@@ -56,7 +67,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center bg-white">
-      <HeaderZara
+      <HeaderSect
         id={id}
         name={name}
         story={story}
@@ -68,7 +79,7 @@ export default function Home() {
           growth={growthData}
           sales={salesData}
         />
-        <SectPartners 
+        <SectPartners
           partners={partners}
         />
         <SectComprasion />

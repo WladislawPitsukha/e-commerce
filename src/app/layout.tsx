@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {Roboto_Mono} from 'next/font/google';
-import NavBar from "@/components/navbar";
-import Footer from "@/components/footer";
+import NavBar from "@/components/mainPage/navbar";
+import Footer from "@/components/mainPage/footer";
 
 export const roboto_mono = Roboto_Mono({
   subsets:['latin'],
