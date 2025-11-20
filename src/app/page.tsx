@@ -1,15 +1,16 @@
 "use client"
 
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import NavBar from "@/components/navbar";
-import SectionCards from "@/components/sectionCards";
-import SectionComment from "@/components/sectionComment";
-import SectionStyle from "@/components/sectionStyle";
+import Footer from "@/components/mainPage/footer";
+import Header from "@/components/mainPage/header";
+import NavBar from "@/components/mainPage/navbar";
+import SectionCards from "@/components/mainPage/sectionCards";
+import SectionComment from "@/components/mainPage/sectionComment";
+import SectionStyle from "@/components/mainPage/sectionStyle";
 import { arrDressStyle } from "@/constants/arrDressStyle";
-import useRandomCards from "@/utils/randomCards";
-import { useEffect } from "react";
 
+import useRandomCards from "@/utils/randomCards";
+
+import { useEffect } from "react";
 
 
 export default function MainPage() {
