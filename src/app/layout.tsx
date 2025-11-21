@@ -1,3 +1,9 @@
+//TODO: fix component to check of correct working
+//TODO: Fix the brand data fetching logic in case of brand not found issue.
+//TODO: Ensure proper capitalization and spacing when deriving brand name from URL slug.
+//TODO: Add error handling for invalid brand slugs in the URL.
+//TODO: Consider adding a loading spinner or placeholder while brand data is being fetched.1
+
 import type { Metadata } from "next";
 import "./globals.css";
 import {Roboto_Mono} from 'next/font/google';

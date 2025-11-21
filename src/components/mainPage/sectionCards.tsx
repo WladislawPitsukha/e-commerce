@@ -1,3 +1,5 @@
+import { ClotheMainObjProps } from "@/types/typeProductCard";
+import ClothesCard from "./clothesCard";
 
 interface SectionCardsProps {
     title: string;
@@ -17,7 +19,7 @@ export default function SectionCards({
             </h2>
             <div className="flex justify-evenly items-center gap-[19px]">
                 {array.map((item, index) => (
-                    <ClothesCard 
+                    <ClothesCard
                         key={index}
                         {...item}
                     />
@@ -25,6 +27,7 @@ export default function SectionCards({
             </div>
             <button
                 title="view all button"
+                type="button"
                 onClick={() => window.location.href = `/${link}`}
                 className="border w-auto h-auto rounded-[62px] border-black"
                 style={{
