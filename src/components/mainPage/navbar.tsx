@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import Form from "next/form";
+// use the native <form> element; `next/form` is not provided by Next.js
 
 import { arrTitleLinks } from "@/constants/navBar/arrTitleLinks";
 import { arrIconNavlinks } from "@/constants/navBar/arrIconNavLinks";
@@ -36,29 +36,40 @@ export default function NavBar() {
                     </Link>
                 ))}                             
             </article>
-            <Form 
+            <form
                 action="/search"
                 className="relative flex items-center"
                 onSubmit={handleSubmit}
+                role="search"
+                aria-label="Site search"
             >
                 <IoSearch
                     className="absolute left-3 w-5 h-5 text-[#00000066]"
+                    aria-hidden="true"
                 />
-                <input  
+                <input
                     type="text"
+                    name="q"
                     value={searchTerm}
                     className="py-2 pl-10 pr-4 w-[577px] h-12 border rounded-full outline-none bg-[#F0F0F0]"
                     onChange={(e) => setSearchTerm(e.target.value)}
                     placeholder="Search for products..."
+                    aria-label="Search for products"
                 />
-            </Form>
+                <button type="submit" className="sr-only">Search</button>
+            </form>
             <article className="flex items-center justify-between gap-4">
                 {arrIconNavlinks.map((item, index) => (
-                    <Link 
-                        href={`/${item.link}`} 
+                    <Link
+                        href={`/${item.link}`}
                         key={index}
+                        aria-label={item.title}
+                        title={item.title}
                     >
-                        <CreateIcon icon={item.icon} />
+                        <CreateIcon
+                            icon={item.icon}
+                            className="w-6 h-6 text-black cursor-pointer transition-transform duration-200 hover:scale-110"
+                        />
                     </Link>
                 ))}
             </article>

@@ -2,6 +2,7 @@ import { ClotheMainObjProps } from "@/types/typeProductCard";
 import ClothesCard from "./clothesCard";
 
 interface SectionCardsProps {
+    id: number;
     title: string;
     array: ClotheMainObjProps[];
     link: string;
@@ -29,10 +30,7 @@ export default function SectionCards({
                 title="view all button"
                 type="button"
                 onClick={() => window.location.href = `/${link}`}
-                className="border w-auto h-auto rounded-[62px] border-black"
-                style={{
-                    width: "218px"
-                }}
+                className="border w-[218px] h-auto rounded-[62px] border-black"
             >
                 <h4 className="font-satoshi w-auto text-base font-medium leading-none tracking-[0%] text-black py-[15px] px-[80px]">
                     View All
