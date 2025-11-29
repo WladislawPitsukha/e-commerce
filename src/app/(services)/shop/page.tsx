@@ -3,12 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 
-import { activewearProducts } from './[category]/active/arrDataProducts';
-import { casualwearProducts } from './[category]/casual/arrDataProducts';
-import { officewearProducts } from './[category]/office/arrDataProducts';
-import { partywearProducts } from './[category]/party/arrDataProducts';
-import { summerwearProducts } from './[category]/summer/arrDataProducts';
-import { winterwearProducts } from './[category]/winter/arrDataProducts';
+
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import TuneIcon from '@mui/icons-material/Tune';
@@ -22,6 +17,12 @@ import { arrDressStyle } from '@/constants/arrDressStyle';
 import PriceFilter from './components/priceFilter';
 import SizeFilter from './components/sizeFilter';
 import ColorsFilter from './components/colorFilter';
+import { casualwearProducts } from '@/constants/category\'/casual/arrDataProducts';
+import { officewearProducts } from '@/constants/category\'/office/arrDataProducts';
+import { partywearProducts } from '@/constants/category\'/party/arrDataProducts';
+import { summerwearProducts } from '@/constants/category\'/summer/arrDataProducts';
+import { winterwearProducts } from '@/constants/category\'/winter/arrDataProducts';
+import { activewearProducts } from '@/constants/category\'/active/arrDataProducts';
 
 function LoadingSpinner() {
     return (

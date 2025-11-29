@@ -1,5 +1,6 @@
 "use client"
 
+import { activewearProducts } from "@/constants/category'/active/arrDataProducts";
 //TODO: fix this function to get the category from the url and display the products of that category
 //TODO: finish this component to display the products of the selected category
 //import HeaderProduct from "../../components/headerProduct";
@@ -10,6 +11,10 @@
 
 import {Box, Tab, Tabs} from "@mui/material";
 import { useState } from "react";
+import HeaderProduct from "../components/headerProduct";
+import ReviewsProduct from "../components/reviewsProduct";
+import DetailsProduct from "../components/detailsProduct";
+import FaqsProduct from "../components/faqsProduct";
 
 interface TabPanelProps  {
     children?: React.ReactNode;
