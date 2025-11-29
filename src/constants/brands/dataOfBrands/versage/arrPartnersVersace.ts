@@ -1,4 +1,4 @@
-import { TextlinkProps } from "../../../../app/(services)/types/typeTextLink";
+import { TextlinkProps } from "@/types/typeTextLink";
 
 export const arrPartnersVersace: TextlinkProps[] = [
     {

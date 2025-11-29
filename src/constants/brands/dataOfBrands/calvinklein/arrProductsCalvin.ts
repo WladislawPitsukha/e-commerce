@@ -8,7 +8,7 @@ import Calvin7 from "@/assets/img/brands/calvinklein/calvinklein_7.png"
 import Calvin8 from "@/assets/img/brands/calvinklein/calvinklein_8.png"
 import Calvin9 from "@/assets/img/brands/calvinklein/calvinklein_9.png"
 
-import { ProductProps } from "../../../../app/(services)/types/typeProductProps"
+import { ProductProps } from "@/types/typeProductProps"
 
 export const arrProductsCalvin: ProductProps[] = [
     {

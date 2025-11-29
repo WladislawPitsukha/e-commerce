@@ -8,7 +8,7 @@ import Gucci7 from "@/assets/img/brands/gucci/gucci_7.png"
 import Gucci8 from "@/assets/img/brands/gucci/gucci_8.png"
 import Gucci9 from "@/assets/img/brands/gucci/gucci_9.png"
 
-import { ProductProps } from "../../../../app/(services)/types/typeProductProps"
+import { ProductProps } from "@/types/typeProductProps"
 
 export const arrProductsGucci: ProductProps[] = [
     {
