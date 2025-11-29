@@ -1,10 +1,12 @@
+import { BasicInfoProps } from "@/types/typeBrands";
+import { CountryDataProps } from "@/types/typeCountryData";
+
+import { arrBrands } from "@/constants/brands/arrBrands";
+
 import { Grid, Table, TableBody, TableCell, TableContainer, TableHead } from "@mui/material";
 import Link from "next/link";
+import { arrCountryZara } from "@/constants/brands/dataOfBrands/zara/arrCountryZara";
 
-import { BasicInfoProps } from "../../../types/typeBrands";
-import { arrBrands } from "../../../constants/arrBrands";
-import { arrCountryZara } from "../arrCountryZara";
-import { CountryDataProps } from "../../../types/typeCountryData";
 
 export function BlockArtComprasion({
     id, 

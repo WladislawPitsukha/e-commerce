@@ -1,7 +1,7 @@
 "use client"
 
+import { SalesDataProps } from '@/types/typeSalesProps';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { SalesDataProps } from '../../../../types/typeSalesProps';
 
 export default function BarChartD({ arrSales }: { arrSales: SalesDataProps[]}) {
     return(

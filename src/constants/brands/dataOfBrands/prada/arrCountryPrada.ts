@@ -1,4 +1,4 @@
-import { CountryDataProps } from "../../../types/typeCountryData";
+import { CountryDataProps } from "@/types/typeCountryData";
 
 export const arrCountryPrada: CountryDataProps[] = [
     {
