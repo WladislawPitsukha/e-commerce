@@ -27,8 +27,8 @@ import { arrPartnersZara } from "./dataOfBrands/zara/arrPartnersZara";
 import { arrProductZara } from "./dataOfBrands/zara/arrProductsZara";
 import { arrSalesZara } from "./dataOfBrands/zara/arrSalesZara";
 
-import { arrCountryZara } from "../../../arrCountryZara";
 import { BrandsProps } from "@/types/typeBrands";
+import { arrCountryZara } from "./dataOfBrands/zara/arrCountryZara";
 
 export const arrBrands: BrandsProps[] = [
     {
