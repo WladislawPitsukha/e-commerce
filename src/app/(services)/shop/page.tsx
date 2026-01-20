@@ -48,19 +48,22 @@ export default function Home() {
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    // Pagination
     const [page, setPage] = useState<number>(1);
     const pageSize = 9;
 
     useEffect(() => {
-        // Shuffle products once on mount and prepare pagination
+        
         try {
             setIsLoading(true);
+
             const shuffled = [...allProducts];
+
             for (let i = shuffled.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
+
                 [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
             }
+
             setShuffledProducts(shuffled);
             setPage(1);
         } catch (err) {
@@ -86,9 +89,9 @@ export default function Home() {
     if (error) return <div className="p-10 text-center text-red-600">{error}</div>;
 
     return(
-        <div className="flex flex-col justify-center bg-white px-[100px]">
+        <div className="flex flex-col justify-center bg-white w-full">
             <NavBar />
-            <main className="flex flex-col justify-between items-start bg-white gap-6">
+            <main className="flex flex-col justify-between items-start bg-white gap-6 px-[100px] ">
                 <div className="flex">
                     <h5 className="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60">
                         Home {'>'} 
@@ -159,7 +162,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className='grid grid-cols-3 gap-[36px]'>
+                        <div className='grid grid-cols-3 gap-[36px] w-full'>
                             {visibleProducts.map((product) => (
                                 <ClothesCard key={product.id} {...product} />
                             ))}
