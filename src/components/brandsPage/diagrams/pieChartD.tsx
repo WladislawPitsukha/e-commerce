@@ -2,7 +2,7 @@
 
 import { Cell, Legend, Pie, PieChart, Tooltip } from "recharts";
 import { useState } from "react";
-import { SalesDataProps } from "../../../../types/typeSalesProps";
+import { SalesDataProps } from "@/types/typeSalesProps";
 
 export default function PieChartD({ arrGrowth }: {arrGrowth: SalesDataProps[]}) {
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8'];

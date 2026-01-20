@@ -1,4 +1,4 @@
-import { SalesDataProps } from "../../../../app/(services)/types/typeSalesProps";
+import { SalesDataProps } from "@/types/typeSalesProps";
 
 export const arrSalesCalvin: SalesDataProps[] = [
     {

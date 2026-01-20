@@ -8,7 +8,7 @@ import Zara7 from "@/assets/img/brands/zara/zara_7.png"
 import Zara8 from "@/assets/img/brands/zara/zara_8.png"
 import Zara9 from "@/assets/img/brands/zara/zara_9.png"
 
-import { ProductProps } from "../../../../app/(services)/types/typeProductProps"
+import { ProductProps } from "@/types/typeProductProps"
 
 export const arrProductZara: ProductProps[] = [
     {

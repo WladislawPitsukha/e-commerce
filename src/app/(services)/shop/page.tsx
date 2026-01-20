@@ -3,12 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 
-import { activewearProducts } from './[category]/active/arrDataProducts';
-import { casualwearProducts } from './[category]/casual/arrDataProducts';
-import { officewearProducts } from './[category]/office/arrDataProducts';
-import { partywearProducts } from './[category]/party/arrDataProducts';
-import { summerwearProducts } from './[category]/summer/arrDataProducts';
-import { winterwearProducts } from './[category]/winter/arrDataProducts';
+
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import TuneIcon from '@mui/icons-material/Tune';
@@ -22,6 +17,14 @@ import { arrDressStyle } from '@/constants/arrDressStyle';
 import PriceFilter from './components/priceFilter';
 import SizeFilter from './components/sizeFilter';
 import ColorsFilter from './components/colorFilter';
+import { casualwearProducts } from '@/constants/category\'/casual/arrDataProducts';
+import { officewearProducts } from '@/constants/category\'/office/arrDataProducts';
+import { partywearProducts } from '@/constants/category\'/party/arrDataProducts';
+import { summerwearProducts } from '@/constants/category\'/summer/arrDataProducts';
+import { winterwearProducts } from '@/constants/category\'/winter/arrDataProducts';
+import { activewearProducts } from '@/constants/category\'/active/arrDataProducts';
+import Footer from '@/components/mainPage/footer';
+import NavBar from '@/components/mainPage/navbar';
 
 function LoadingSpinner() {
     return (
@@ -84,10 +87,14 @@ export default function Home() {
 
     return(
         <div className="flex flex-col justify-center bg-white px-[100px]">
+            <NavBar />
             <main className="flex flex-col justify-between items-start bg-white gap-6">
                 <div className="flex">
                     <h5 className="font-satoshi font-normal text-base leading-100 tracking-0 text-black/60">
-                        Home {'>'}
+                        Home {'>'} 
+                    </h5>
+                    <h5 className='font-satoshi font-normal text-base leading-100 tracking-0 text-black/60'>
+                        {'  '} Shop
                     </h5>
                 </div>
                 <div className="flex items-start justify-center gap-5 w-full h-auto">
@@ -197,6 +204,7 @@ export default function Home() {
                     </section>
                 </div>
             </main>
+            <Footer />
         </div>
     )
 }

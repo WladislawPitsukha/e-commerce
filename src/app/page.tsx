@@ -1,6 +1,8 @@
 "use client"
 
+import Footer from "@/components/mainPage/footer";
 import Header from "@/components/mainPage/header";
+import NavBar from "@/components/mainPage/navbar";
 import SectionCards from "@/components/mainPage/sectionCards";
 import SectionComment from "@/components/mainPage/sectionComment";
 import SectionStyle from "@/components/mainPage/sectionStyle";
@@ -55,6 +57,7 @@ export default function MainPage() {
 
     return(
         <div className="flex flex-col items-center bg-white">
+            <NavBar />
             <Header />
             {sections.map((section, index) => (
                 <SectionCards
@@ -67,6 +70,7 @@ export default function MainPage() {
                 {...DRESS_STYLE_CONFIG}
             />
             <SectionComment />
+            <Footer />
         </div>
     )
 }
