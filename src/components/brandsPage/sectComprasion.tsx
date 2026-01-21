@@ -7,7 +7,6 @@ import { Grid, Table, TableBody, TableCell, TableContainer, TableHead } from "@m
 import Link from "next/link";
 import { arrCountryZara } from "@/constants/brands/dataOfBrands/zara/arrCountryZara";
 
-
 export function BlockArtComprasion({
     id, 
     name,
