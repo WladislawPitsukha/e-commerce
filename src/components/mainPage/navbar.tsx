@@ -20,7 +20,7 @@ export default function NavBar() {
     }
 
     return(
-        <nav className="flex justify-around items-center my-6 sticky top-0 left-0 bg-white z-50">
+        <nav className="flex justify-around items-center my-6 sticky top-0 left-0 bg-white z-50 w-full">
             <h2 className="text-[32px] font-bold leading-[38.4px] text-left text-black">
                 SHOP.COM
             </h2>

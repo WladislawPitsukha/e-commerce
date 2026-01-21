@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Footer() {
     return(
-        <footer className="flex flex-col gap-6 pt-32 pb-20 px-[100px] mt-20 bg-[#F0F0F0]">
+        <footer className="flex flex-col gap-6 pt-32 pb-20 px-[100px] mt-20 bg-[#F0F0F0] w-full">
             <section className="flex justify-between">
                 <aside className="flex flex-col items-start gap-[35px]">
                     <div className="flex flex-col items-start gap-6">

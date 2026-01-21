@@ -1,7 +1,5 @@
 "use client"
 
-import "../globals.css"
-
 import PieChartD from './diagrams/pieChartD';
 import BarChartD from './diagrams/barChartD';
 import MapChart from "./mapChart";
