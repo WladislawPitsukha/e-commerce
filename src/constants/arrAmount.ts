@@ -1,4 +1,4 @@
-import { AmountProps } from './../types/amountProps';
+import { AmountProps } from "@/types/typesProject";
 
 export const arrAmount: AmountProps[] = [
     {

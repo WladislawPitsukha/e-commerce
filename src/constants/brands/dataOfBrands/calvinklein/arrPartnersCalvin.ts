@@ -1,4 +1,4 @@
-import { TextlinkProps } from "@/types/typeTextLink";
+import { TextlinkProps } from "@/types/typesProject";
 
 export const arrPartnersCalvin: TextlinkProps[] = [
     {

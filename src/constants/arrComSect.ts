@@ -1,4 +1,4 @@
-import { ComSectProps } from "@/types/typeComSect";
+import { ComSectProps } from "@/types/typesProject";
 
 export const arrComSect: ComSectProps[] = [
     {

@@ -2,7 +2,7 @@ import Clothe1 from '@/assets/img/clotheStyle/clothe1.png';
 import Clothe2 from '@/assets/img/clotheStyle/clothe2.png';
 import Clothe3 from '@/assets/img/clotheStyle/clothe3.png';
 import Clothe4 from '@/assets/img/clotheStyle/clothe4.png';
-import { DressStyle } from '@/types/typeDressStyle';
+import { DressStyle } from '@/types/typesProject';
 
 export const arrDressStyle: DressStyle[] = [
     {

@@ -1,7 +1,6 @@
-import { IconType } from "react-icons";
 import { FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaFacebookF, FaGithub } from "react-icons/fa";
-import { FooterIconLinks } from "@/types/typeFooLinks";
+import { FooterIconLinks } from "@/types/typesProject";
 
 export const arrIconLinks: FooterIconLinks[] = [
     {

@@ -1,4 +1,4 @@
-import { FooterArraysText } from "@/types/typeFooLinks";
+import { FooterArraysText } from "@/types/typesProject";
 
 export const arrTextLinks: FooterArraysText[] = [
     {
