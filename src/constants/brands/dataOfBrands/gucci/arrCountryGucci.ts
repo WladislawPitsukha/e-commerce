@@ -1,4 +1,5 @@
-import { CountryDataProps } from "@/types/typeCountryData";
+import { CountryDataProps } from "@/types/typesProject";
+
 
 export const arrCountryGucci: CountryDataProps[] = [
     {
