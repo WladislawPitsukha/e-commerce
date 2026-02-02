@@ -5,10 +5,8 @@ import OfficewearCalvin1_3 from "@/assets/img/category/office/officewearCalvin1_
 import OfficewearZara1_1 from "@/assets/img/category/office/officewearZara1_1.jpg"
 import OfficewearZara1_2 from "@/assets/img/category/office/officewearZara1_2.jpg"
 import OfficewearZara1_3 from "@/assets/img/category/office/officewearZara1_3.jpg"
+import { ProductCardProps } from "@/types/typesProject"
 
-import { ProductCardProps } from "@/types/typeProductCard";
-
-//TODO: add much more clothe's objs for building & testing
 
 export const officewearProducts: ProductCardProps[] = [
     {

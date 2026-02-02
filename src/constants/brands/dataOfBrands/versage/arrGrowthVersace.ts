@@ -1,4 +1,4 @@
-import { SalesDataProps } from "@/types/typeSalesProps";
+import { SalesDataProps } from "@/types/typesProject";
 
 export const arrGrowthVersace: SalesDataProps[] = [
     {

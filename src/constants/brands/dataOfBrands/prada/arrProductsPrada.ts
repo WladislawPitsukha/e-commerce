@@ -7,8 +7,8 @@ import Prada6 from "@/assets/img/brands/prada/prada_6.png"
 import Prada7 from "@/assets/img/brands/prada/prada_7.png"
 import Prada8 from "@/assets/img/brands/prada/prada_8.png"
 import Prada9 from "@/assets/img/brands/prada/prada_9.png"
+import { ProductProps } from "@/types/typesProject"
 
-import { ProductProps } from "@/types/typeProductProps"
 
 export const arrProductPrada: ProductProps[] = [
     {

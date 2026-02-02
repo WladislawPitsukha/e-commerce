@@ -1,4 +1,4 @@
-import { NavLinkProps } from "@/types/typeNavLinks";
+import { NavLinkProps } from "@/types/typesProject";
 
 export const arrTitleLinks: NavLinkProps[] = [
     {

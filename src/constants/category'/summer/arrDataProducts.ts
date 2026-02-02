@@ -1,8 +1,8 @@
 import SummerwearZara1_1 from "@/assets/img/category/summer/summerwearZara1_1.jpg";
 import SummerwearZara1_2 from "@/assets/img/category/summer/summerwearZara1_2.jpg";
 import SummerwearZara1_3 from "@/assets/img/category/summer/summerwearZara1_3.jpg";
+import { ProductCardProps } from "@/types/typesProject";
 
-import { ProductCardProps } from "@/types/typeProductCard";
 
 export const summerwearProducts: ProductCardProps[] = [
     {

@@ -1,10 +1,8 @@
 import CasualstyleGucci1_1 from "@/assets/img/category/casual/CasualstyleGucci1_1.jpg";
 import CasualstyleGucci1_2 from "@/assets/img/category/casual/CasualstyleGucci1_2.jpg";
 import CasualstyleGucci1_3 from "@/assets/img/category/casual/CasualstyleGucci1_3.jpg";
+import { ProductCardProps } from "@/types/typesProject";
 
-import { ProductCardProps } from "@/types/typeProductCard";
-
-//TODO: add much more clothe's objs for building & testing
 
 export const casualwearProducts: ProductCardProps[] = [
     {

@@ -1,4 +1,5 @@
-import { SalesDataProps } from "@/types/typeSalesProps";
+import { SalesDataProps } from "@/types/typesProject";
+
 
 export const arrSalesPrada: SalesDataProps[] = [
     {

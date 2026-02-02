@@ -7,8 +7,9 @@ import Versace6 from "@/assets/img/brands/versace/versace_6.png"
 import Versace7 from "@/assets/img/brands/versace/versace_7.png"
 import Versace8 from "@/assets/img/brands/versace/versace_8.png"
 import Versace9 from "@/assets/img/brands/versace/versace_9.png"
+import { ProductProps } from "@/types/typesProject"
 
-import { ProductProps } from "@/types/typeProductProps"
+
 
 export const arrProductVersace: ProductProps[] = [
     {

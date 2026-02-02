@@ -1,10 +1,8 @@
 import ActivewearNike1_1 from "@/assets/img/category/active/activewearZara1_1.jpg";
 import ActivewearNike1_2 from "@/assets/img/category/active/activewearZara1_2.jpg";
 import ActivewearNike1_3 from "@/assets/img/category/active/activewearZara1_3.jpg";
+import { ProductCardProps } from "@/types/typesProject";
 
-import { ProductCardProps } from "@/types/typeProductCard";
-
-//TODO: add much more clothe's objs for building & testing
 
 export const activewearProducts: ProductCardProps[] = [
     {

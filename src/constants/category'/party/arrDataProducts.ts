@@ -1,8 +1,8 @@
 import PartystyleCalvinklein1_1 from "@/assets/img/category/party/partywearCalvinKlein1_1.jpg";
 import PartystyleCalvinklein1_2 from "@/assets/img/category/party/partywearCalvinKlein1_2.jpg";
 import PartystyleCalvinklein1_3 from "@/assets/img/category/party/partywearCalvinKlein1_3.jpg";
+import { ProductCardProps } from "@/types/typesProject";
 
-import { ProductCardProps } from "@/types/typeProductCard";
 
 export const partywearProducts: ProductCardProps[] = [
     {

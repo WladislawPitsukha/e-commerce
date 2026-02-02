@@ -1,4 +1,5 @@
-import { NavLinkProps } from "@/types/typeNavLinks";
+
+import { NavLinkProps } from "@/types/typesProject";
 import { RiAccountCircleLine } from "react-icons/ri";
 import { SlBasket } from "react-icons/sl";
 

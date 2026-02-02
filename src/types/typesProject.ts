@@ -20,7 +20,7 @@ export interface BaseNamed {
 }
 
 export interface NavLinkProps extends BaseLink, Partial<BaseTitled> {
-    icon: IconType;
+    icon: IconType | null;
 }
 
 export interface LinksPageFilterProps extends BaseEntity, BaseLink {

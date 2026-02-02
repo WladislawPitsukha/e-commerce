@@ -1,8 +1,8 @@
 import WinterwearGucci1_1 from "@/assets/img/category/winter/winterwearGucci1_1.jpg";
 import WinterwearGucci1_2 from "@/assets/img/category/winter/winterwearGucci1_2.jpg";
 import WinterwearGucci1_3 from "@/assets/img/category/winter/winterwearGucci1_3.jpg";
+import { ProductCardProps } from "@/types/typesProject";
 
-import { ProductCardProps } from "@/types/typeProductCard";
 
 export const winterwearProducts: ProductCardProps[] = [
     {
